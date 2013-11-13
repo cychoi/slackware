@@ -290,11 +290,16 @@ xwininfo
 xwud
 
 # XAP
+MPlayer
+audacious
+audacious-plugins
 fluxbox
+gftp
 gimp
 imagemagick
 mozilla-firefox
 mozilla-thunderbird
+network-manager-applet
 pidgin
 sane
 windowmaker

@@ -203,21 +203,16 @@ xf86-video-nouveau
 xf86-video-nv
 
 # XAP
-MPlayer
-audacious
-audacious-plugins
 blackbox
 blueman
 electricsheep
 fvwm
 geeqie
-gftp
 gkrellm
 gnuchess
 gnuplot
 gucharmap
 gv
-network-manager-applet
 pan
 rdesktop
 rxvt
