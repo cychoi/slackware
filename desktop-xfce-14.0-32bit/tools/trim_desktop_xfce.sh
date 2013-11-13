@@ -26,7 +26,7 @@ for PACKAGE in $INSTALL; do
   fi
 done
 
-if [ -z $PACKAGES ]; then
+if [ -z "$PACKAGES" ]; then
   continue
 else
   /usr/sbin/slackpkg install $PACKAGES
