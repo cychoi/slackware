@@ -290,6 +290,9 @@ xwininfo
 xwud
 
 # XAP
+MPlayer
+audacious
+audacious-plugins
 fluxbox
 gimp
 imagemagick
