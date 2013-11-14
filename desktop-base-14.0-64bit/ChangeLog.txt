@@ -1,3 +1,24 @@
+Thu Nov 14 10:19:14 CET 2013
+a52dec-0.7.4-x86_64-2_microlinux.txz: Added.
+celt-0.11.3-x86_64-2_microlinux.txz: Added.
+dirac-1.0.2-x86_64-2_microlinux.txz: Added.
+faad2-2.7-x86_64-2_microlinux.txz: Added.
+flash-player-plugin-11.2.202.310-x86_64-1_microlinux.txz: Added.
+frei0r-1.3-x86_64-2_microlinux.txz: Added.
+gsm-1.0.13-x86_64-2_microlinux.txz: Added.
+gst-ffmpeg-0.10.13-x86_64-2_microlinux.txz: Added.
+lame-3.99.5-x86_64-2_microlinux.txz: Added.
+libavc1394-0.5.3-x86_64-3_microlinux.txz: Added.
+libaacs-0.6.0-x86_64-1_microlinux.txz: Added.
+libbluray-0.2.3-x86_64-2_microlinux.txz: Added.
+libcdaudio-0.99.12p2-x86_64-2_microlinux.txz: Added.
+libcuefile-r453-x86_64-2_microlinux.txz: Added.
+libdc1394-2.2.0-x86_64-2_microlinux.txz: Added.
+libdca-0.0.5-x86_64-2_microlinux.txz: Added.
+libdv-1.0.0-x86_64-2_microlinux.txz: Added.
+libdvdcss-1.2.11-x86_64-2_microlinux.txz: Added.
+libdvdnav-4.2.0-x86_64-2_microlinux.txz: Added.
++---------------------------+
 Thu Nov 14 06:59:22 CET 2013
 acpica-20130725-x86_64-1_microlinux.txz: Added.
 gc-7.2d-x86_64-2_microlinux.txz: Added.
