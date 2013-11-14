@@ -79,6 +79,10 @@ Une fois l'installation terminée, on peut la verrouiller comme ceci :
   # cd /var/www/vhosts/dolibarr
   # touch install.lock
 
+Accéder à l'interface d'administration et procéder à la configuration de base :
+
+  * Nom de la société
+  * Modules
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
