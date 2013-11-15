@@ -1,3 +1,16 @@
+Fri Nov 15 07:33:43 CET 2013
+libiec61883-1.2.0-i486-3_microlinux.txz: Added.
+libkate-0.4.1-i486-2_microlinux.txz: Added.
+libmms-0.6.2-i486-2_microlinux.txz: Added.
+libmodplug-0.8.8.4-i486-2_microlinux.txz: Added.
+libmp4v2-2.0.0-i486-2_microlinux.txz: Added.
+libmusicbrainz-2.1.5-i486-2_microlinux.txz: Added.
+libreplaygain-r453-i486-2_microlinux.txz: Added.
+libvpx-1.1.0-i486-2_microlinux.txz: Added.
+live555-2011.12.23-i486-2_microlinux.txz: Added.
+mjpegtools-2.0.0-i486-2_microlinux.txz: Added.
+mplayer-codecs-20071007-i486-4_microlinux.txz: Added.
++---------------------------+
 Thu Nov 14 09:31:28 CET 2013
 a52dec-0.7.4-i486-2_microlinux.txz: Added.
 celt-0.11.3-i486-2_microlinux.txz: Added.
