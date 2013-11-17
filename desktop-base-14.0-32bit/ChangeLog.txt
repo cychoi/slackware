@@ -1,3 +1,7 @@
+slackware/google-droid-fonts-20100409-noarch-2_microlinux.txz
+slackware/webcore-fonts-3.0-noarch-4_microlinux.txz
+slackware/eurostile-fonts-1.0-noarch-2_microlinux.txz
++---------------------------+
 Sat Nov 16 10:22:28 CET 2013
 OpenAL-1.15.1-i486-1_microlinux.txz: Added.
 opencore-amr-0.1.2-i486-2_microlinux.txz: Added.
