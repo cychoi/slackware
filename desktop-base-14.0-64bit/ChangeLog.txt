@@ -1,3 +1,10 @@
+Sun Nov 17 06:56:51 CET 2013
+google-droid-fonts-20100409-noarch-2_microlinux.txz: Added.
+webcore-fonts-3.0-noarch-4_microlinux.txz: Added.
+eurostile-fonts-1.0-noarch-2_microlinux.txz: Added.
+slack-wallpapers-0.212-noarch-2_microlinux.txz: Added.
+microlinux-wallpapers-1.0-noarch-2_microlinux.txz: Added.
++---------------------------+
 Sat Nov 16 10:14:16 CET 2013
 OpenAL-1.15.1-x86_64-1_microlinux.txz: Added.
 opencore-amr-0.1.2-x86_64-2_microlinux.txz: Added.
