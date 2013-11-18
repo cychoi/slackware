@@ -1,0 +1,13 @@
+soprano-2.9.0-x86_64-2_microlinux.txz: Upgraded.
+akonadi-1.9.0-x86_64-2_microlinux.txz: Upgraded.
+attica-0.4.1-x86_64-2_microlinux.txz: Upgraded.
+shared-desktop-ontologies-0.10.0-x86_64-1_microlinux.txz: Upgraded.
+virtuoso-ose-6.1.6-x86_64-2_microlinux.txz: Upgraded.
+qt-4.8.4-x86_64-2_microlinux.txz: Upgraded.
+qjson-0.8.1-x86_64-2_microlinux.txz: Added.
+sip-4.14.2-x86_64-2_microlinux.txz: Upgraded.
+PyQt-4.9.6-x86_64-2_microlinux.txz: Upgraded.
+phonon-gstreamer-4.6.3-x86_64-2.txz: Upgraded.
+cmake-2.8.10.2-x86_64-2_microlinux.txz: Upgraded.
+kdelibs-4.10.5-x86_64-2_microlinux.txz: Upgraded.
++---------------------------+
