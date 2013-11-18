@@ -1,3 +1,4 @@
+Mon Nov 18 18:11:16 CET 2013
 soprano-2.9.0-i486-2_microlinux.txz: Upgraded.
 akonadi-1.9.0-i486-2_microlinux.txz: Upgraded.
 attica-0.4.1-i486-2_microlinux.txz: Upgraded.
