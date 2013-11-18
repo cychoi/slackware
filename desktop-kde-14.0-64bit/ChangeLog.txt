@@ -10,4 +10,11 @@ PyQt-4.9.6-x86_64-2_microlinux.txz: Upgraded.
 phonon-gstreamer-4.6.3-x86_64-2.txz: Upgraded.
 cmake-2.8.10.2-x86_64-2_microlinux.txz: Upgraded.
 kdelibs-4.10.5-x86_64-2_microlinux.txz: Upgraded.
+nepomuk-core-4.10.5-x86_64-2_microlinux.txz: Added.
+kactivities-4.10.5-x86_64-2_microlinux.txz: Upgraded.
+kdepimlibs-4.10.5-x86_64-2_microlinux.txz: Upgraded.
+kde-runtime-4.10.5-x86_64-2_microlinux.txz: Upgraded.
+kde-workspace-4.10.5-x86_64-3_microlinux.txz: Upgraded.
+kde-baseapps-4.10.5-x86_64-2_microlinux.txz: Upgraded.
+oxygen-icons-4.10.5-x86_64-2_microlinux.txz: Upgraded.
 +---------------------------+
