@@ -43,10 +43,39 @@ AddDefaultCharset uft-8
   AddIconByType /slackware/repository-layout/image-x-generic.png image/*
 
   # DESCRIPTIONS
-  AddDescription "Linux documentation" Linux-HOWTOs -HOWTO.txt
-  AddDescription "Extra Software for 32-bit Slackware Server" server-14.0-32bit
-  AddDescription "Extra Software for 64-bit Slackware Server" server-14.0-64bit
-  AddDescription "Source Code for Extra Server Software" server-14.0-source
+  AddDescription "Microlinux documentation in French" Linux-HOWTOs -HOWTO.txt
+  AddDescription "Helper scripts" tools
+  AddDescription "Obsolete software" pasture
+  AddDescription "Work in progress" desktop-base-14.0-32bit
+  AddDescription "Work in progress" desktop-base-14.0-64bit
+  AddDescription "Work in progress" desktop-base-14.0-source
+  AddDescription "Work in progress" desktop-base-14.1-32bit
+  AddDescription "Work in progress" desktop-base-14.1-64bit
+  AddDescription "Work in progress" desktop-base-14.1-source
+  AddDescription "Work in progress" desktop-kde-14.0-32bit
+  AddDescription "Work in progress" desktop-kde-14.0-64bit
+  AddDescription "Work in progress" desktop-kde-14.0-source
+  AddDescription "Work in progress" desktop-kde-14.1-32bit
+  AddDescription "Work in progress" desktop-kde-14.1-64bit
+  AddDescription "Work in progress" desktop-kde-14.1-source
+  AddDescription "Work in progress" desktop-mate-14.0-32bit
+  AddDescription "Work in progress" desktop-mate-14.0-64bit
+  AddDescription "Work in progress" desktop-mate-14.0-source
+  AddDescription "Work in progress" desktop-mate-14.1-32bit
+  AddDescription "Work in progress" desktop-mate-14.1-64bit
+  AddDescription "Work in progress" desktop-mate-14.1-source
+  AddDescription "Work in progress" desktop-xfce-14.0-32bit
+  AddDescription "Work in progress" desktop-xfce-14.0-64bit
+  AddDescription "Work in progress" desktop-xfce-14.0-source
+  AddDescription "Work in progress" desktop-xfce-14.1-32bit
+  AddDescription "Work in progress" desktop-xfce-14.1-64bit
+  AddDescription "Work in progress" desktop-xfce-14.1-source
+  AddDescription "Microlinux Server 14.0 32-bit" server-14.0-32bit
+  AddDescription "Microlinux Server 14.0 64-bit" server-14.0-64bit
+  AddDescription "Microlinux Server 14.0 source code" server-14.0-source
+  AddDescription "Work in progress" server-14.1-32bit
+  AddDescription "Work in progress" server-14.1-64bit
+  AddDescription "Work in progress" server-14.1-source
   AddDescription "Plain text file" .txt README
   AddDescription "Slackware build script" .SlackBuild
   AddDescription "Slackware package" .txz
