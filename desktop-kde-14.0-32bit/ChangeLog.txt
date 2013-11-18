@@ -29,4 +29,17 @@ gwenview-4.10.5-i486-2_microlinux.txz: Upgraded.
 pykde4-4.10.5-i486-2_microlinux.txz: Upgraded.
 kate-4.10.5-i486-2_microlinux.txz: Upgraded.
 ark-4.10.5-i486-2_microlinux.txz: Upgraded.
+ksnapshot-4.10.5-i486-2_microlinux.txz: Upgraded.
+libkcddb-4.10.5-i486-2_microlinux.txz: Added.
+k3b-2.0.2-i486-2_microlinux.txz: Rebuilt.
+kde-wallpapers-4.10.5-i486-3_microlinux.txz: Upgraded.
+kdeartwork-4.10.5-i486-3_microlinux.txz: Upgraded.
+kamera-4.10.5-i486-2_microlinux.txz: Upgraded.
+kcalc-4.10.5-i486-2_microlinux.txz: Upgraded.
+oxygen-gtk3-1.1.4-i486-2_microlinux.txz: Added.
+kmix-4.10.5-i486-2_microlinux.txz: Added.
+print-manager-4.10.5-i486-2_microlinux.txz: Added.
+libksane-4.10.5-i486-2_microlinux.txz: Upgraded.
+ksaneplugin-4.10.5-i486-2_microlinux.txz: Upgraded.
+skanlite-1.0-i486-2_microlinux.txz: Upgraded.
 +---------------------------+
