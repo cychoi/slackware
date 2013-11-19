@@ -4,45 +4,10 @@
 mplayerplug-in
 
 # KDE
-ark
-gwenview
-k3b
-kactivities
-kamera
-kate
-kcalc
-kcharselect
-kcolorchooser
-kdeartwork
-kdegraphics-mobipocket
-kdegraphics-strigi-analyzer
-kdegraphics-thumbnailers
-kdelibs
-kdepimlibs
-kde-baseapps
-kde-runtime
-kde-wallpapers
-kde-workspace
-konsole
-ksaneplugin
-ksnapshot
-okular
-libkdcraw
-libkexiv2
-libkipi
-libksane
-networkmanagement
-oxygen-gtk2
-oxygen-icons
 polkit-kde-agent-1
 polkit-kde-kcmodules-1
-pykde4
-skanlite
-svgpart
 
 # KDEI
-kde-l10n-de
-kde-l10n-fr
 
 # T (needed by ffmpeg)
 tetex
