@@ -1,3 +1,7 @@
+mozilla-firefox-l10n-17.0.11-i486-1_microlinux.txz: Added.
+mozilla-thunderbird-l10n-17.0.10-i486-1_microlinux.txz: Added.
+MPlayer-1.1-i486-2_microlinux.txz: Rebuilt.
++---------------------------+
 Tue Nov 19 05:50:42 CET 2013
 libmusicbrainz3-3.0.3-i486-2_microlinux.txz: Added.
 openoffice-4.0.1_en_US-i586-2_microlinux.txz: Added.
