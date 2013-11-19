@@ -1,3 +1,8 @@
+Tue Nov 19 10:39:45 CET 2013
+mozilla-firefox-l10n-17.0.11-x86_64-1_microlinux.txz: Added.
+mozilla-thunderbird-l10n-17.0.10-x86_64-1_microlinux.txz: Added.
+MPlayer-1.1-x86_64-2_microlinux.txz: Added.
++---------------------------+
 Tue Nov 19 06:08:55 CET 2013
 libmusicbrainz3-3.0.3-x86_64-2_microlinux.txz: Added.
 openoffice-4.0.1_en_US-x86_64-2_microlinux.txz: Added.
