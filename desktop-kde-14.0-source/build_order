@@ -43,3 +43,16 @@ libksane
 ksaneplugin
 skanlite
 user-settings-kde
+kcharselect
+kcolorchooser
+kdegraphics-mobipocket
+libkdcraw
+kdegraphics-strigi-analyzer
+kdegraphics-thumbnailers
+mplayerthumbs
+svgpart
+ffmpegthumbs
+networkmanagement
+kscd
+libkcompactdisc
+audiocd-kio
