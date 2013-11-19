@@ -1,3 +1,15 @@
+user-settings-kde-4.10.5-noarch-2_microlinux.txz: Added.
+kcharselect-4.10.5-i486-2_microlinux.txz: Upgraded.
+kcolorchooser-4.10.5-i486-2_microlinux.txz: Upgraded.
+kdegraphics-mobipocket-4.10.5-i486-2_microlinux.txz: Upgraded.
+libkdcraw-4.10.5-i486-2_microlinux.txz: Upgraded.
+kdegraphics-strigi-analyzer-4.10.5-i486-2_microlinux.txz: Upgraded.
+kdegraphics-thumbnailers-4.10.5-i486-2_microlinux.txz: Upgraded.
+mplayerthumbs-4.10.5-i486-2_microlinux.txz: Added.
+svgpart-4.10.5-i486-2_microlinux.txz: Upgraded.
+ffmpegthumbs-4.10.5-i486-2_microlinux.txz: Added.
+networkmanagement-0.9.0.8-i486-2_microlinux.txz: Added.
++---------------------------+
 Mon Nov 18 18:11:16 CET 2013
 soprano-2.9.0-i486-2_microlinux.txz: Upgraded.
 akonadi-1.9.0-i486-2_microlinux.txz: Upgraded.
