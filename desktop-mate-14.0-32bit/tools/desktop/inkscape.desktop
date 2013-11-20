@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
-Name=Vector Graphics Editor
-Name[de]=Vektorgrafik-Editor
-Name[fr]=Éditeur d’images vectorielles
+Name=Vector Graphics
+Name[de]=Vektorgrafik
+Name[fr]=Images vectorielles
 Comment=Inkscape
 Type=Application
 Categories=Graphics;VectorGraphics;GTK;
