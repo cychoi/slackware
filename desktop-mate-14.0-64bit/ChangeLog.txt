@@ -1,0 +1,6 @@
+Wed Nov 20 11:30:40 CET 2013
+libgnomecanvas-2.30.3-x86_64-2_microlinux.txz: Added.
+gdm-2.20.11-x86_64-2_microlinux.txz: Added.
+aero-1.0-noarch-1_microlinux.txz: Added.
+faenza-icon-theme-1.3-noarch-3_microlinux.txz: Added.
++---------------------------+
