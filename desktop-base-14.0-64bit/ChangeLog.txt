@@ -1,3 +1,19 @@
+Wed Nov 20 09:49:42 CET 2013
+audacious-3.2.4-x86_64-2_microlinux.txz: Rebuilt.
+audacious-plugins-3.2.4-x86_64-2_microlinux.txz: Rebuilt.
+tolua++-1.0.93-x86_64-2_microlinux.txz: Added.
+conky-1.9.0-x86_64-3_microlinux.txz: Added.
+lxml-3.1.1-x86_64-2_microlinux.txz: Added.
+libsigc++-2.2.10-x86_64-2_microlinux.txz: Added.
+mm-common-0.9.5-noarch-2_microlinux.txz: Added.
+glibmm-2.32.1-x86_64-2_microlinux.txz: Added.
+cairomm-1.10.0-x86_64-2_microlinux.txz: Added.
+pangomm-2.28.4-x86_64-2_microlinux.txz: Added.
+atkmm-2.22.6-x86_64-2_microlinux.txz: Added.
+gtkmm-2.24.2-x86_64-2_microlinux.txz: Added.
+inkscape-0.48.4-x86_64-2_microlinux.txz: Added.
+smplayer-0.8.5-x86_64-2_microlinux.txz: Added.
++---------------------------+
 Tue Nov 19 10:39:45 CET 2013
 mozilla-firefox-l10n-17.0.11-x86_64-1_microlinux.txz: Added.
 mozilla-thunderbird-l10n-17.0.10-x86_64-1_microlinux.txz: Added.
