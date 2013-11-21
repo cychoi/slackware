@@ -1,3 +1,19 @@
+Thu Nov 21 11:17:54 CET 2013
+slackware64/wxGTK-2.8.12-x86_64-3_microlinux.txz
+slackware64/audacity-2.0.3-x86_64-2_microlinux.txz
+slackware64/poedit-1.4.6.1-x86_64-2_microlinux.txz
+slackware64/filezilla-3.7.3-x86_64-2_microlinux.txz
+slackware64/id3lib-3.8.3-x86_64-3_microlinux.txz
+slackware64/easytag-2.1.6-x86_64-4_microlinux.txz
+slackware64/gnote-0.7.6-x86_64-2_microlinux.txz
+slackware64/gtkcdlabel-1.15-noarch-2_microlinux.txz
+slackware64/pyxdg-0.18-x86_64-2_microlinux.txz
+slackware64/goocanvas-0.15-x86_64-2_microlinux.txz
+slackware64/pygoocanvas-0.14.1-x86_64-3_microlinux.txz
+slackware64/openshot-1.4.3-x86_64-2_microlinux.txz
+slackware64/virtualbox-4.2.18-x86_64-2_microlinux.txz
+slackware64/virtualbox-kernel-4.2.18_3.2.45-x86_64-2_microlinux.txz
++---------------------------+
 Wed Nov 20 09:49:42 CET 2013
 audacious-3.2.4-x86_64-2_microlinux.txz: Rebuilt.
 audacious-plugins-3.2.4-x86_64-2_microlinux.txz: Rebuilt.
