@@ -1,3 +1,19 @@
+Thu Nov 21 09:11:18 CET 2013
+wxGTK-2.8.12-i486-3_microlinux.txz: Added.
+audacity-2.0.3-i486-2_microlinux.txz: Added.
+poedit-1.4.6.1-i486-2_microlinux.txz: Added.
+filezilla-3.7.3-i486-2_microlinux.txz: Added.
+id3lib-3.8.3-i486-3_microlinux.txz: Added.
+easytag-2.1.6-i486-4_microlinux.txz: Added.
+gnote-0.7.6-i486-2_microlinux.txz: Added.
+gtkcdlabel-1.15-noarch-2_microlinux.txz: Added.
+pyxdg-0.18-i486-2_microlinux.txz: Added.
+goocanvas-0.15-i486-2_microlinux.txz: Added.
+pygoocanvas-0.14.1-i486-3_microlinux.txz: Added.
+openshot-1.4.3-i486-2_microlinux.txz: Added.
+virtualbox-4.2.18-i486-2_microlinux.txz: Added.
+virtualbox-kernel-4.2.18_3.2.45_smp-i486-2_microlinux.txz: Added.
++---------------------------+
 Wed Nov 20 06:40:35 CET 2013
 audacious-3.2.4-i486-2_microlinux.txz: Rebuilt.
 audacious-plugins-3.2.4-i486-2_microlinux.txz: Rebuilt.

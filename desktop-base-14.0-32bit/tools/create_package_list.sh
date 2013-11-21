@@ -7,4 +7,6 @@ cat /tmp/all.txt \
   | grep -v all.SlackBuild \
   | grep -v build_order \
   | grep -v openoffice-langpack \
+  | grep -v filezilla \
+  | grep -v virtualbox \
   > $CWD/pkglists/packages-desktop-base

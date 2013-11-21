@@ -3,6 +3,7 @@ acpica
 atkmm
 audacious
 audacious-plugins
+audacity
 BeautifulSoup
 cairomm
 cddb-py
@@ -10,6 +11,7 @@ cdlabelgen
 celt
 conky
 dirac
+easytag
 enca
 eurostile-fonts
 faac
@@ -19,13 +21,17 @@ flash-player-plugin
 frei0r
 gc
 glibmm
+gnote
+goocanvas
 google-droid-fonts
 gsl
 gsm
 gst-ffmpeg
 gst-plugins-bad
 gst-plugins-ugly
+gtkcdlabel
 gtkmm
+id3lib
 imlib2
 inkscape
 jdk
@@ -75,9 +81,13 @@ OpenAL
 opencore-amr
 openjpeg
 openoffice
+openshot
 orc
 p7zip
 pangomm
+poedit
+pygoocanvas
+pyxdg
 recode
 rtmpdump
 sbopkg
@@ -94,5 +104,6 @@ unrar
 user-settings-console
 vcdimager
 webcore-fonts
+wxGTK
 x264
 xvidcore
