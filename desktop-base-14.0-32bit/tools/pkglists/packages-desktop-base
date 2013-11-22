@@ -1,5 +1,6 @@
 a52dec
 acpica
+aMule
 atkmm
 audacious
 audacious-plugins
@@ -10,6 +11,7 @@ cddb-py
 cdlabelgen
 celt
 conky
+cryptopp
 dirac
 easytag
 enca
@@ -34,6 +36,7 @@ gtkmm
 id3lib
 imlib2
 inkscape
+jbig2dec
 jdk
 lame
 libaacs
@@ -75,6 +78,7 @@ mozilla-firefox-l10n
 mozilla-thunderbird-l10n
 MPlayer
 mplayer-codecs
+mupdf
 musepack-tools
 numpy
 OpenAL
@@ -99,6 +103,7 @@ soundtouch
 speex
 tolua++
 transcode
+transmission
 twolame
 unrar
 user-settings-console
