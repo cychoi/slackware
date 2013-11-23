@@ -1,9 +1,6 @@
-=================================
-Microlinux Enterprise Workstation (c) Niki Kovacs, <info@microlinux.fr>
-=================================
-
-This repository contains a complete collection of extra software for the
-Slackware-based Microlinux Enterprise Workstation (MLWS).
+======================================
+Microlinux Enterprise Desktop 14.0 KDE (c) Niki Kovacs, <info@microlinux.fr>
+======================================
 
 
   * Introduction
@@ -22,24 +19,11 @@ Slackware-based Microlinux Enterprise Workstation (MLWS).
 Introduction
 ------------
 
-The Microlinux Enterprise Workstation is a full-blown production desktop based
-on the latest stable Slackware Linux and a trimmed-down KDE desktop.  
+The Microlinux Enterprise Desktop 14.0 KDE is a full-blown production
+desktop/workstation based on Slackware Linux 14.0 and a trimmed-down KDE 4.10.5
+desktop with many enhancements.  
 
-MLWS is *not* some derivative distribution. It consists of a collection of
-roughly 150 custom packages installed on top of an unaltered Slackware base
-system. It focuses on the KDE desktop environment, trimmed down and with many
-enhancements. 
-
-A selection of carefully integrated applications are featured, one per task.
-Elegant and sober artwork fit for use in a corporate environment is also
-included. A complete selection of codecs, plugins and fonts provide a seamless
-desktop experience. Intuitive and user-friendly default settings and menu
-entries are provided. 
-
-The Microlinux Enterprise Workstation runs reasonably fast on ten-year-old
-hardware. A battered first-generation Pentium-IV with 512 MB RAM and a 10 GB
-hard disk will be perfectly sufficient for the job, though 1 GB of RAM will get
-you a more decent desktop experience.
+Check out http://www.microlinux.fr/mled_kde.php for more details.
 
 
 Installation
@@ -48,7 +32,7 @@ Installation
 The following step-by-step instructions assume you already know how to install
 a vanilla Slackware desktop. You will need a working internet connection.
 
-The Microlinux Enterprise Workstation installs on top of a carefully selected
+The Microlinux Enterprise Desktop installs on top of a carefully selected
 Slackware base. In order to avoid painstakingly picking each package, the
 recommended method is to use the provided set of tagfiles. 
 
