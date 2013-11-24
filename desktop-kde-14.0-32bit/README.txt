@@ -2,18 +2,11 @@
 Microlinux Enterprise Desktop 14.0 KDE (c) Niki Kovacs, <info@microlinux.fr>
 ======================================
 
+Last revision : Sun Nov 24 08:28:39 CET 2013
 
-  * Introduction
-  * Installation
-  * Download the Microlinux scripts
-  * Configure 'slackpkg'
-  * Trim and upgrade
-  * Install the MLWS package collection
-  * Set locales
-  * Multilib stuff 
-  * Clean up the applications menu
-  * Finishing up
-  * Using the NetworkManager
+The following document provides detailed step-by-step installation instructions
+for MLED 14.0 KDE 32-bit and 64-bit. Read everything carefully. The sections
+you choose to skip will come back and bite you. :o)
 
 
 Introduction
@@ -29,12 +22,12 @@ Check out http://www.microlinux.fr/mled_kde.php for more details.
 Installation
 ------------
 
-The following step-by-step instructions assume you already know how to install
-a vanilla Slackware desktop. You will need a working internet connection.
+The following instructions assume you already know how to install a vanilla
+Slackware desktop. You will need a working internet connection.
 
-The Microlinux Enterprise Desktop installs on top of a carefully selected
-Slackware base. In order to avoid painstakingly picking each package, the
-recommended method is to use the provided set of tagfiles. 
+MLED installs on top of a carefully selected Slackware base. In order to avoid
+painstakingly picking each package, the recommended method is to use the
+provided set of tagfiles. 
 
 Boot the Slackware installation DVD (or the first CD). Select your keyboard
 layout, login as root and partition your hard disk, but don't start the
@@ -201,7 +194,7 @@ Now upgrade the base Slackware packages:
 
 Three important remarks on this initial upgrade:
 
-  1. Don't shoot yourself in the foot when upgrading the kernel.
+  1. Don't shoot yourself in the foot when upgrading the kernel. Duh.
 
   2. The odd existing package will be upgraded and replaced by an MLED package.
   Don't worry, this is normal.
@@ -248,9 +241,9 @@ Then, install KDE-specific packages
   # cd desktop-kde-14.0-32bit/tools
   # ./install-desktop-kde.sh
 
-  /!\ Scripts in the 64-bit subdirectories are really just symlinks to those in
-  the 32-bit directories, so you can use either on a 32-bit and a 64-bit
-  system.
+  /!\ Installation scripts in the 64-bit subdirectories are really just
+  symlinks to those in the 32-bit directories, so you can use either one
+  regardless of your processor architecture.
 
 
 Set locales
