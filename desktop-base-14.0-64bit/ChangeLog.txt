@@ -1,3 +1,10 @@
+Sun Nov 24 08:03:02 CET 2013
+transmission-2.77-x86_64-2_microlinux.txz: Added.
+cryptopp-5.6.1-x86_64-3_microlinux.txz: Added.
+aMule-2.3.1-x86_64-2_microlinux.txz: Added.
+jbig2dec-0.11-x86_64-2_microlinux.txz: Added.
+mupdf-1.2-x86_64-2_microlinux.txz: Added.
++---------------------------+
 Thu Nov 21 11:17:54 CET 2013
 slackware64/wxGTK-2.8.12-x86_64-3_microlinux.txz
 slackware64/audacity-2.0.3-x86_64-2_microlinux.txz
