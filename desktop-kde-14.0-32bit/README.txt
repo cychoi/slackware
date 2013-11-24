@@ -2,7 +2,7 @@
 Microlinux Enterprise Desktop 14.0 KDE (c) Niki Kovacs, <info@microlinux.fr>
 ======================================
 
-Last revision : Sun Nov 24 08:28:39 CET 2013
+Last revision : Sun Nov 24 17:21:12 CET 2013 
 
 The following document provides detailed step-by-step installation instructions
 for MLED 14.0 KDE 32-bit and 64-bit. Read everything carefully. The sections
@@ -79,9 +79,15 @@ SELECT DEFAULT WINDOW MANAGER FOR X : 'xinitrc.wmaker'
 
   /!\ This choice is only temporary, since KDE is not yet installed.
 
-Finish the base Slackware installation. Eventually, chroot into the newly
-installed environment and replace the HUGE kernel by the GENERIC kernel (that's
-what I usually do). Exit and reboot.
+Finish the base Slackware installation. 
+
+  /!\ Eventually, chroot into the newly installed environment and replace the
+  HUGE kernel by the GENERIC kernel. That's what I usually do.
+
+Exit and reboot.
+
+  /!\ Don't define a user yet. We'll wait until the MLED user profiles are
+  installed.
 
 
 Download the Microlinux scripts
@@ -269,17 +275,20 @@ export LC_COLLATE=en_US.utf8
 Clean up the applications menu
 ------------------------------
 
-The 'tools/' directory features the 'cleanmenu' utility, a small Bash script to
-clean up various desktop menu entries and make them Joe-Sixpack-friendly. Run
-this utility:
+The 'desktop-kde-14.0-32bit/tools/' directory features the 'cleanmenu' utility,
+a small Bash script to clean up various desktop menu entries and make them
+Joe-Sixpack-friendly. Run this utility:
 
-  # cd tools/
+  # cd desktop-kde-14.0-32bit/tools/
   # ./cleanmenu
 
   /!\ The script replaces many '*.desktop' files in '/usr/share/applications'
   and similar locations by some custom-made menu entry files. For now, they're
   only localized in english, french and german, so you may not want to run the
   script if you use another language.
+
+  /!\ Again, the script in desktop-kde-14.0-64bit/tools is really just a
+  symlink to its 32-bit counterpart.
 
 
 Finishing up
@@ -293,10 +302,36 @@ We're almost there. Here's what's left to be done.
 
   3. Switch to default runlevel 4.
 
-Reboot and enjoy your shiny new Microlinux Enterprise Workstation.
+  4. Reboot.
 
 
-                                    Niki Kovacs, Fri Aug 23 06:26:42 CEST 2013
+Maintenance
+-----------
+
+Here's a few tips & tricks to keep your MLED installation up-to-date.
+
+Check out the various ChangeLog.txt files in the desktop-base-* and
+desktop-kde-* subdirectories for new additions and/or updates. 
+
+If you want to know the state of your system - e. g. what's installed, what's
+not installed and what updates are available, you can do all this in one single
+command :
+
+  # slackpkg search microlinux | less
+
+Some packages - like VirtualBox or Filezilla - are not automatically installed
+by the installation script, but they're available in the repository. If you
+wish to run these applications, simply install them manually:
+
+  # slackpkg install <application>
+
+Last but not least, updates may sometimes overwrite the custom menu entries
+with a default *.desktop file. If that is the case, simply rerun the
+'cleanmenu' utility.
+
+Enjoy your shiny new Microlinux Enterprise Desktop 14.0 KDE!
+
+                                           -- Niki Kovacs <info@microlinux.fr>
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
