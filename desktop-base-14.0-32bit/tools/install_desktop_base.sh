@@ -28,5 +28,5 @@ else
 fi
 
 echo
-echo ":: Microlinux Enterprise Desktop Base installed."
+echo ":: MLED 14.0 Base installed."
 echo

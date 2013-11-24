@@ -51,7 +51,7 @@ for a set of tagfiles, so let's use it.
 
 Grab the set of tagfiles from the server:
 
-  # wget http://www.microlinux.fr/slackware/MLWS-14.0-32bit/tagfiles.tar.gz
+  # wget http://www.microlinux.fr/slackware/desktop-kde-14.0-32bit/tagfiles.tar.gz
 
   /!\ The sets of tagfiles in the 32-bit and 64-bit subdirectories are
   symlinked and thus identical. 
@@ -82,19 +82,21 @@ USE UTF-8 TEXT CONSOLE: 'Yes'
 
 CONFIRM STARTUP SERVICES TO RUN: accept the default selection
 
-SELECT DEFAULT WINDOW MANAGER FOR X : 'xinitrc.kde' 
+SELECT DEFAULT WINDOW MANAGER FOR X : 'xinitrc.wmaker' 
 
-  -> This choice is of no consequence, since user profiles already contain the
-  relevant '~/.xinitrc' file.
+  /!\ This choice is only temporary, since KDE is not yet installed.
 
-Finish the base Slackware installation and reboot.
+Finish the base Slackware installation. Eventually, chroot into the newly
+installed environment and replace the HUGE kernel by the GENERIC kernel (that's
+what I usually do). Exit and reboot.
 
 
 Download the Microlinux scripts
 -------------------------------
 
-I'm providing a few helper scripts that will speed up the installation process.
-Grab the whole Microlinux file tree using the following command:
+I'm providing a few helper scripts and ready-to-use configuration files to
+speed up the installation process. Grab the whole Microlinux file tree using
+the following command:
 
   # cd
   # git clone https://github.com/kikinovak/slackware
@@ -103,8 +105,8 @@ Grab the whole Microlinux file tree using the following command:
 Configure 'slackpkg'
 --------------------
 
-Download the 'slackpkg+' plugin for 'slackpkg'. It's very convenient for
-handling third-party repositories like MLWS:
+Download and install the 'slackpkg+' plugin for 'slackpkg'. It's very
+convenient for handling third-party repositories like MLED.
 
   # links http://slakfinder.org/slackpkg+
 
@@ -134,9 +136,10 @@ On 32-bit Slackware:
 SLACKPKGPLUS=on
 VERBOSE=1
 USEBL=1
-PKGS_PRIORITY=( microlinux:.* )
-REPOPLUS=( slackpkgplus microlinux )
-MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLWS-14.0-32bit/
+PKGS_PRIORITY=( desktop-base:.* desktop-kde:.* )
+REPOPLUS=( desktop-base desktop-kde slackpkgplus )
+MIRRORPLUS['desktop-base']=http://www.microlinux.fr/slackware/desktop-base-14.0-32bit
+MIRRORPLUS['desktop-kde']=http://www.microlinux.fr/slackware/desktop-kde-14.0-32bit
 MIRRORPLUS['slackpkgplus']=http://slakfinder.org/slackpkg+/
 --8<--------------------------------------------------------------------------
 
@@ -147,11 +150,18 @@ On Slackware64:
 SLACKPKGPLUS=on
 VERBOSE=1
 USEBL=1
-PKGS_PRIORITY=( microlinux:.* )
-REPOPLUS=( slackpkgplus microlinux )
-MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLWS-14.0-64bit/
+PKGS_PRIORITY=( multilib:.* desktop-base:.* desktop-kde:.* )
+REPOPLUS=( multilib desktop-base desktop-kde slackpkgplus )
+MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.0/
+MIRRORPLUS['desktop-base']=http://www.microlinux.fr/slackware/desktop-base-14.0-64bit/
+MIRRORPLUS['desktop-kde']=http://www.microlinux.fr/slackware/desktop-kde-14.0-64bit/
 MIRRORPLUS['slackpkgplus']=http://slakfinder.org/slackpkg+/
 --8<--------------------------------------------------------------------------
+
+  /!\ There are ready-to-use configuration files in the GIT file tree you
+  downloaded. Just copy 'desktop-kde-14.0-{32,64}bit/config/slackpkgplus.conf'
+  to '/etc/slackpkg'. Chooses the right file depending on your processor
+  architecture.
 
 Update GPG keys :
 
@@ -167,20 +177,20 @@ Trim and upgrade
 
 In case you didn't use the set of tagfiles during the initial installation,
 now's the time to eventually catch up on it. The 'tools' directory provides a
-basic 'trim-desktop-base.sh' script that takes care of two things:
+basic 'trim-desktop-kde.sh' script that takes care of two things:
 
   1. install needed packages
   2. get rid of unneeded packages
 
 The script makes use of 'slackpkg', so make sure it's configured correctly.
 
-  # cd slackware/MLWS-14.0-32bit/tools/
-  # ./trim-workstation-base.sh
+  # cd slackware/desktop-kde-14.0-32bit/tools/
+  # ./trim-desktop-kde.sh
 
   /!\ You may use this script in Slackware64. The script in the 64-bit file
   tree is only a symlink to the script above.
 
-If you don't use the 'trim-desktop-base.sh' script, then you still have to
+If you don't use the 'trim-desktop-kde.sh' script, then you still have to
 install the MPlayer plugin from 'extra/' manually:
 
   # slackpkg install mplayerplug-in
@@ -189,28 +199,65 @@ Now upgrade the base Slackware packages:
 
   # slackpkg upgrade-all
 
+Three important remarks on this initial upgrade:
 
-Install the MLWS package collection
+  1. Don't shoot yourself in the foot when upgrading the kernel.
+
+  2. The odd existing package will be upgraded and replaced by an MLED package.
+  Don't worry, this is normal.
+
+  3. On Slackware64, you'll notice your gcc-* and glibc-* packages will be
+  replaced by Multilib versions. Again, don't worry, this is also meant to be.
+
+
+Multilib stuff
+--------------
+
+On Slackware64, you may want to add applications like VirtualBox, Wine, Skype,
+etc. This is why 'slackpkg+' has been preconfigured to make use of Eric
+Hameleers' Multilib packages. 
+
+The initial system upgrade we've just performed has already replaced your base
+gcc-* and glibc-* packages by the respective Multilib versions. The only thing
+that's left to do now is to install the complete set of additional 32-bit
+support libraries. This can be done in one simple step using the following
+command:
+
+  # slackpkg install compat32
+
+
+Install the MLED package collection
 -----------------------------------
 
-Simply use the provided 'install-MLWS.sh' script in the 'tools/' directory:
+MLED 14.0 packages come in two big sets of packages :
 
-  # cd tools/
-  # ./install-MLWS.sh
+  * MLED 14.0 Base: the base set of desktop-agnostic packages
+  * MLED 14.0 KDE : packages specific to the KDE desktop
 
-This script parses the 'packages-MLWS' file in the 'pkglists' directory and
-takes care of downloading and installing all listed packages using 'slackpkg'.
+The easiest way to install both package sets is to use the included install
+scripts in the respective 'tools/' directories.
 
-  /!\ From time to time, there's some new stuff added to MLWS. If you want to
-  integrate the Full Monty of new packages, it's as simple as re-running the
-  'install-MLWS.sh' script. It will automagically take care of everything.
+First, install the set of Base packages:
+
+  # cd desktop-base-14.0-32bit/tools
+  # ./install-desktop-base.sh
+  # cd ../..
+
+Then, install KDE-specific packages
+
+  # cd desktop-kde-14.0-32bit/tools
+  # ./install-desktop-kde.sh
+
+  /!\ Scripts in the 64-bit subdirectories are really just symlinks to those in
+  the 32-bit directories, so you can use either on a 32-bit and a 64-bit
+  system.
 
 
 Set locales
 -----------
 
 Now you'll probably have to adjust your environment variables in
-'/etc/profile.d/lang.sh'. Default variables are set to fr_FR.UTF8, since MLWS's
+'/etc/profile.d/lang.sh'. Default variables are set to fr_FR.UTF8, since MLED's
 main use is in France:
 
 --8<---------- /etc/profile.d/lang.sh ----------------------------------------
@@ -224,57 +271,6 @@ English-speaking Slackware users will use something like this:
 export LANG=en_US.utf8
 export LC_COLLATE=en_US.utf8
 --8<--------------------------------------------------------------------------
-
-
-Multilib stuff 
---------------
-
-On Slackware64, you may want to add applications like VirtualBox, Wine, Skype,
-etc.  In that case, you have to install the 32-bit compatibility layer provided
-by Eric Hameleers. The 'slackpkg+' plugin makes this task very easy. 
-
-First, add the Multilib repository:
-
---8<---------- /etc/slackpkg/slackpkgplus.conf -------------------------------
-...
-REPOPLUS=( ... multilib )
-MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.0/
-...
---8<--------------------------------------------------------------------------
-
-The Multilib repository takes precedence over standard Slackware packages:
-
---8<---------- /etc/slackpkg/slackpkgplus.conf -------------------------------
-...
-PKGS_PRIORITY=( ... multilib:.* )
-...
---8<--------------------------------------------------------------------------
-
-Here's what our complete configuration file looks like now:
-
---8<---------- /etc/slackpkg/slackpkgplus.conf -------------------------------
-# /etc/slackpkg/slackpkgplus.conf
-SLACKPKGPLUS=on
-VERBOSE=1
-USEBL=1
-PKGS_PRIORITY=( microlinux:.* multilib:.* )
-REPOPLUS=( microlinux slackpkgplus )
-MIRRORPLUS['microlinux']=http://mirror.nestor/microlinux/MLWS-14.0-64bit/
-MIRRORPLUS['multilib']=http://taper.alienbase.nl/mirrors/people/alien/multilib/14.0/
-MIRRORPLUS['slackpkgplus']=http://slakfinder.org/slackpkg+/
---8<--------------------------------------------------------------------------
-
-Upgrade your system:
-
-  # slackpkg upgrade-all
-
-  /!\ This will replace all the stock gcc-* and glibc-* packages with Eric's
-  multilib versions.
-
-Now install the complete set of additional 32-bit support libraries. This can
-be done in one simple step using the following command:
-
-  # slackpkg install compat32
 
 
 Clean up the applications menu

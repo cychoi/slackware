@@ -28,5 +28,5 @@ else
 fi
 
 echo
-echo ":: Microlinux Enterprise Desktop KDE installed."
+echo ":: MLED 14.0 KDE installed."
 echo

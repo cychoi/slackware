@@ -4,7 +4,6 @@ gimp:ADD
 imagemagick:ADD
 mozilla-firefox:ADD
 mozilla-thunderbird:ADD
-network-manager-applet:ADD
 pidgin:ADD
 sane:ADD
 windowmaker:ADD
@@ -26,6 +25,7 @@ gnuchess:SKP
 gnuplot:SKP
 gucharmap:SKP
 gv:SKP
+network-manager-applet:SKP
 pan:SKP
 rdesktop:SKP
 rxvt:SKP

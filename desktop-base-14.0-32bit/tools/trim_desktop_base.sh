@@ -33,5 +33,5 @@ else
 fi
 
 echo
-echo ":: System is ready for building the Microlinux Enterprise Desktop Base."
+echo ":: System is ready for building/installing MLED 14.0 Base."
 echo
