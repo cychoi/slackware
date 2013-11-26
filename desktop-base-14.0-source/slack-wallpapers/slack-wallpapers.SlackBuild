@@ -26,7 +26,7 @@
 
 PRGNAM=slack-wallpapers
 VERSION=${VERSION:-0.212}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_microlinux}
 
 ARCH=noarch
@@ -59,18 +59,18 @@ find . \
 
 # KDE
 mkdir -p $PKG/usr/share/wallpapers
-cp -a images $PKG/usr/share/wallpapers/Slackware
+cp -a images/* $PKG/usr/share/wallpapers/
 
 # MATE
 mkdir -p $PKG/usr/share/backgrounds/mate
 cd $PKG/usr/share/backgrounds/mate
-ln -s ../../wallpapers/Slackware .
+ln -s ../../wallpapers/* .
 cd -
 
 # Xfce
 mkdir -p $PKG/usr/share/xfce4/backdrops
 cd $PKG/usr/share/xfce4/backdrops
-ln -s ../../wallpapers/Slackware .
+ln -s ../../wallpapers/* .
 cd -
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION

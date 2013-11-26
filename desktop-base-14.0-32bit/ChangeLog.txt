@@ -1,3 +1,7 @@
+Tue Nov 26 11:46:53 CET 2013
+microlinux-wallpapers-1.0-noarch-3_microlinux.txz: Rebuilt.
+slack-wallpapers-0.212-noarch-3_microlinux.txz: Rebuilt.
++---------------------------+
 Fri Nov 22 15:45:55 CET 2013
 transmission-2.77-i486-2_microlinux.txz: Added.
 cryptopp-5.6.1-i486-3_microlinux.txz: Added.
