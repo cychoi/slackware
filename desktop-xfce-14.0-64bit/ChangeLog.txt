@@ -1,5 +1,7 @@
-
+Wed Nov 27 08:42:43 CET 2013
 user-settings-xfce-1.0-noarch-7_microlinux.txz: Rebuilt.
+libgnomecanvas-2.30.3-x86_64-2_microlinux.txz: Added.
+gdm-2.20.11-x86_64-2_microlinux.txz: Added.
 +---------------------------+
 Tue Nov 26 08:36:50 CET 2013
 aero-1.0-noarch-2_microlinux.txz: Added.
