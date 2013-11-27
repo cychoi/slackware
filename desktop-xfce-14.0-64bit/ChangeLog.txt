@@ -7,6 +7,7 @@ totem-pl-parser-2.32.5-x86_64-2_microlinux.txz: Added.
 brasero-3.4.1-x86_64-2_microlinux.txz: Added.
 dconf-0.12.1-x86_64-2_microlinux.txz: Added.
 evince-3.4.0-x86_64-2_microlinux.txz: Added.
+gthumb-3.0.1-x86_64-1_microlinux.txz: Added.
 +---------------------------+
 Tue Nov 26 08:36:50 CET 2013
 aero-1.0-noarch-2_microlinux.txz: Added.
