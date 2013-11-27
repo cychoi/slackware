@@ -2,6 +2,11 @@ Wed Nov 27 08:42:43 CET 2013
 user-settings-xfce-1.0-noarch-7_microlinux.txz: Rebuilt.
 libgnomecanvas-2.30.3-x86_64-2_microlinux.txz: Added.
 gdm-2.20.11-x86_64-2_microlinux.txz: Added.
+simple-scan-2.32.0.2-x86_64-2_microlinux.txz: Added.
+totem-pl-parser-2.32.5-x86_64-2_microlinux.txz: Added.
+brasero-3.4.1-x86_64-2_microlinux.txz: Added.
+dconf-0.12.1-x86_64-2_microlinux.txz: Added.
+evince-3.4.0-x86_64-2_microlinux.txz: Added.
 +---------------------------+
 Tue Nov 26 08:36:50 CET 2013
 aero-1.0-noarch-2_microlinux.txz: Added.
