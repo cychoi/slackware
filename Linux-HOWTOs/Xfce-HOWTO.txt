@@ -118,6 +118,8 @@ Garder les répertoires suivants :
 
 Supprimer tout le reste.
 
+Supprimer .config/xfce4/xfce4-screenshooter
+
 Empaqueter la configuration :
 
   # cd ..
