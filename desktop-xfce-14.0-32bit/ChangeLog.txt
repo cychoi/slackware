@@ -1,3 +1,5 @@
+user-settings-xfce-1.0-noarch-7_microlinux.txz: Rebuilt.
++---------------------------+
 Tue Nov 26 08:36:50 CET 2013
 aero-1.0-noarch-2_microlinux.txz: Added.
 gtk-engines-2.20.2-i486-3_microlinux.txz: Added.
