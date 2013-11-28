@@ -1,3 +1,11 @@
+Thu Nov 28 06:25:52 CET 2013
+totem-pl-parser-2.32.5-i486-2_microlinux.txz: Added.
+brasero-3.4.1-i486-2_microlinux.txz: Added.
+gthumb-3.0.1-i486-1_microlinux.txz: Added.
+simple-scan-2.32.0.2-i486-2_microlinux.txz: Added.
+asunder-2.2-i486-2_microlinux.txz: Added.
+gcolor2-0.4-i486-4_microlinux.txz: Added.
++---------------------------+
 Thu Nov 21 07:36:08 CET 2013
 gtk-engines-2.20.2-i486-3_microlinux.txz: Added.
 clearlooks-phenix-theme-2.0.10-noarch-2_microlinux.txz: Added.
