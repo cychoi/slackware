@@ -1,3 +1,7 @@
+Thu Nov 28 05:57:00 CET 2013
+user-settings-xfce-1.0-noarch-8_microlinux.txz: Rebuilt.
+  Fixed broken Open Office launchers.
++---------------------------+
 Wed Nov 27 07:54:22 CET 2013
 user-settings-xfce-1.0-noarch-7_microlinux.txz: Rebuilt.
 libgnomecanvas-2.30.3-i486-2_microlinux.txz: Added.
