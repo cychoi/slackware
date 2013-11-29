@@ -3,6 +3,58 @@
 # EXTRA
 mplayerplug-in
 
+# KDE
+ark
+audiocd-kio
+gwenview
+k3b
+kactivities
+kamera
+kate
+kaudiocreator
+kcalc
+kcharselect
+kcolorchooser
+kde-base-artwork
+kde-baseapps
+kde-runtime
+kde-wallpapers
+kde-workspace
+kdeartwork
+kdegraphics-mobipocket
+kdegraphics-strigi-analyzer
+kdegraphics-thumbnailers
+kdelibs
+kdepimlibs
+kio-mtp
+kmix
+konsole
+ksaneplugin
+ksnapshot
+libkcddb
+libkcompactdisc
+libkdcraw
+libkexiv2
+libkipi
+libksane
+mplayerthumbs
+nepomuk-core
+networkmanagement
+okular
+oxygen-gtk2
+oxygen-gtk3
+oxygen-icons
+polkit-kde-agent-1
+polkit-kde-kcmodules-1
+print-manager
+pykde4
+skanlite
+svgpart
+
+# KDEI
+kde-l10n-de
+kde-l10n-fr
+
 # T (needed by ffmpeg)
 tetex
 tetex-doc
@@ -70,6 +122,7 @@ fstobdf
 gccmakedep
 glew
 glproto
+glu
 iceauth
 ico
 imake
@@ -140,7 +193,6 @@ resourceproto
 rgb
 scim
 scim-anthy
-scim-bridge
 scim-hangul
 scim-input-pad
 scim-m17n
@@ -165,12 +217,14 @@ xbitmaps
 xcalc
 xcb-proto
 xcb-util
+xcb-util-cursor
 xcb-util-image
 xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
 xclipboard
 xclock
+xcm
 xcmiscproto
 xcmsdb
 xcompmgr
@@ -206,6 +260,7 @@ xf86-video-ati
 xf86-video-chips
 xf86-video-cirrus
 xf86-video-dummy
+xf86-video-geode
 xf86-video-glint
 xf86-video-i128
 xf86-video-i740
@@ -222,13 +277,17 @@ xf86-video-s3virge
 xf86-video-savage
 xf86-video-siliconmotion
 xf86-video-sis
+xf86-video-sisusb
 xf86-video-tdfx
 xf86-video-tga
 xf86-video-trident
+xf86-video-tseng
 xf86-video-v4l
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
+xf86-video-xgi
+xf86-video-xgixp
 xf86bigfontproto
 xf86dga
 xf86dgaproto
@@ -291,6 +350,7 @@ xwud
 
 # XAP
 fluxbox
+gftp
 gimp
 imagemagick
 mozilla-firefox
@@ -300,4 +360,3 @@ sane
 windowmaker
 xine-lib
 xscreensaver
-
