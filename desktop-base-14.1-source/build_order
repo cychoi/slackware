@@ -18,5 +18,20 @@ frei0r
 gsm
 libiec61883
 libavc1394
+libilbc
+openjpeg
+ladspa_sdk
+libmodplug
+OpenAL
+opencore-amr
+opus
+rtmpdump
+orc
+schroedinger
+speex
+twolame
+libvpx
+xvidcore
+ffmpeg
 
 
