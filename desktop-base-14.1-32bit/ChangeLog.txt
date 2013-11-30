@@ -1,3 +1,17 @@
+Sat Nov 30 12:20:58 CET 2013
+sbopkg-0.36.0-noarch-1_microlinux.txz: Added.
+recode-3.6-i486-1_microlinux.txz: Added.
+cdlabelgen-4.3.0-noarch-1_microlinux.txz: Added.
+p7zip-9.20.1-i486-1_microlinux.txz: Added.
+unrar-5.0.13-i486-1_microlinux.txz: Added.
+lame-3.99.5-i486-1_microlinux.txz: Added.
+x264-20131101-i486-1_microlinux.txz: Added.
+enca-1.15-i486-1_microlinux.txz: Added.
+libass-0.10.2-i486-1_microlinux.txz: Added.
+libaacs-0.6.0-i486-1_microlinux.txz: Added.
+libbluray-0.4.0-i486-1_microlinux.txz: Added.
+celt-0.11.3-i486-1_microlinux.txz: Added.
++---------------------------+
 Tue Nov 12 22:51:10 CET 2013
 user-settings-console-1.0-noarch-1_microlinux.txz: Added.
 +---------------------------+
