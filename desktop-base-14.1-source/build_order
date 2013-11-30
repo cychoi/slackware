@@ -11,5 +11,12 @@ libass
 libaacs
 libbluray
 celt
+libdc1394
+libmp4v2
+faac
+frei0r
+gsm
+libiec61883
+libavc1394
 
 

@@ -1,6 +1,5 @@
 #!/bin/sh
-
-# Slackware build script for libass
+# Slackware build script for libdc1394
 
 # Copyright 2011-2013 Larry Hajali <larryhaja[at]gmail[dot]com>
 # All rights reserved.
@@ -21,12 +20,11 @@
 #  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-# Written by Larry Hajali <larryhaja[at]gmail[dot]com>
 #
 # Modified by Niki Kovacs <info@microlinux.fr>
 
-PRGNAM=libass
-VERSION=${VERSION:-0.10.2}
+PRGNAM=libdc1394
+VERSION=${VERSION:-2.2.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
@@ -61,17 +59,17 @@ fi
 
 set -e
 
-if [ ! -r $PRGNAM-$VERSION.tar.xz ] ; then
-   wget -c http://libass.googlecode.com/files/$PRGNAM-$VERSION.tar.xz
+if [ ! -r $PRGNAM-$VERSION.tar.gz ] ; then
+   wget -c http://downloads.sourceforge.net/$PRGNAM/$PRGNAM-$VERSION.tar.gz
 fi
 
-md5sum -c $PRGNAM-$VERSION.tar.xz.md5
+md5sum -c $PRGNAM-$VERSION.tar.gz.md5
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find . \
@@ -85,18 +83,25 @@ CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --mandir=/usr/man \
+  --enable-doxygen-man \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
   --enable-static=no \
-  --disable-silent-rules \
+  --with-x \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS 
 make install DESTDIR=$PKG || exit 1
 
-find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
+find $PKG/usr/man -type f -exec gzip -9 {} \;
+
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a Changelog COPYING $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a \
+  AUTHORS ChangeLog COPYING INSTALL NEWS README \
+  $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
@@ -106,5 +111,6 @@ cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-txz}
 
 # Cleanup
-cd $TMP
+cd $TMP          
 rm -rf $PRGNAM-$VERSION $PKG
+
