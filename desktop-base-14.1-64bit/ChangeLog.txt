@@ -11,6 +11,13 @@ libass-0.10.2-x86_64-1_microlinux.txz: Added.
 libaacs-0.6.0-x86_64-1_microlinux.txz: Added.
 libbluray-0.4.0-x86_64-1_microlinux.txz: Added.
 celt-0.11.3-x86_64-1_microlinux.txz: Added.
+libdc1394-2.2.1-x86_64-1_microlinux.txz: Added.
+libmp4v2-2.0.0-x86_64-1_microlinux.txz: Added.
+faac-1.28-x86_64-2_microlinux.txz: Added.
+frei0r-1.4-x86_64-1_microlinux.txz: Added.
+gsm-1.0.13-x86_64-1_microlinux.txz: Added.
+libiec61883-1.2.0-x86_64-1_microlinux.txz: Added.
+libavc1394-0.5.4-x86_64-1_microlinux.txz: Added.
 +---------------------------+
 Tue Nov 12 22:50:56 CET 2013
 user-settings-console-1.0-noarch-1_microlinux.txz: Added.
