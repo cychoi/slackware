@@ -12,6 +12,7 @@ libreplaygain-r475-x86_64-1_microlinux.txz: Added.
 musepack-tools-r475-x86_64-1_microlinux.txz: Added.
 libdca-0.0.5-x86_64-1_microlinux.txz: Added.
 MPlayer-1.1.1-x86_64-1_microlinux.txz: Added.
+mplayer-codecs-20110131-x86_64-1_microlinux.txz: Added.
 +---------------------------+
 Sat Nov 30 20:12:56 CET 2013
 libilbc-20131002-x86_64-1_microlinux.txz: Added.

@@ -113,5 +113,5 @@ find . -type f -exec chmod 644 {} \;
 
 # Cleanup
 cd $TMP          
-rm -rf all-$VERSION essential-amd64-$VERSION $PKG
+rm -rf all-$VERSION essential-amd64-$AMDVERS $PKG
 
