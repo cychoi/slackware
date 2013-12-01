@@ -1,3 +1,18 @@
+Sun Dec  1 09:41:33 CET 2013
+a52dec-0.7.4-x86_64-1_microlinux.txz: Added.
+libdv-1.0.0-x86_64-1_microlinux.txz: Added.
+libmpeg2-0.5.1-x86_64-1_microlinux.txz: Added.
+faad2-2.7-x86_64-1_microlinux.txz: Added.
+libquicktime-1.2.4-x86_64-1_microlinux.txz: Added.
+mjpegtools-2.1.0-x86_64-1_microlinux.txz: Added.
+transcode-1.1.7-x86_64-1_microlinux.txz: Added.
+dirac-1.0.2-x86_64-1_microlinux.txz: Added.
+libcuefile-r475-x86_64-1_microlinux.txz: Added.
+libreplaygain-r475-x86_64-1_microlinux.txz: Added.
+musepack-tools-r475-x86_64-1_microlinux.txz: Added.
+libdca-0.0.5-x86_64-1_microlinux.txz: Added.
+MPlayer-1.1.1-x86_64-1_microlinux.txz: Added.
++---------------------------+
 Sat Nov 30 20:12:56 CET 2013
 libilbc-20131002-x86_64-1_microlinux.txz: Added.
 openjpeg-1.5.1-x86_64-1_microlinux.txz: Added.
