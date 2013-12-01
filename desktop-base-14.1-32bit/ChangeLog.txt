@@ -11,8 +11,10 @@ libcuefile-r475-i486-1_microlinux.txz: Added.
 libreplaygain-r475-i486-1_microlinux.txz: Added.
 musepack-tools-r475-i486-1_microlinux.txz: Added.
 libdca-0.0.5-i486-1_microlinux.txz: Added.
-MPlayer-1.1.1-i486-1_microlinux.txz: Added.
+MPlayer-1.1.1-i486-1_microlinux.txz: Rebuilt.
 mplayer-codecs-20110131-i486-1_microlinux.txz: Added.
+jdk-7u45-i586-1_microlinux.txz: Added.
+flashplayer-plugin-11.2.202.327-i386-1_microlinux.txz: Added.
 +---------------------------+
 Sat Nov 30 19:56:17 CET 2013
 libilbc-20131002-i486-1_microlinux.txz: Added.
