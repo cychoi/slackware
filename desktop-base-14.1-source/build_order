@@ -33,5 +33,21 @@ twolame
 libvpx
 xvidcore
 ffmpeg
+a52dec
+libdv
+libmpeg2
+faad2
+libquicktime
+mjpegtools
+transcode
+dirac
+libcuefile
+libreplaygain
+musepack-tools
+libdca
+MPlayer
+
+
+
 
 
