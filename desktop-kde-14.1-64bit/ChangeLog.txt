@@ -1,0 +1,9 @@
+Sun Dec  1 15:54:23 CET 2013
+kde-baseapps-4.10.5-x86_64-2_microlinux.txz
+  Rebuilt without Konqueror, since we're using Firefox.
+kde-base-artwork-4.10.5-x86_64-2_microlinux.txz
+kde-workspace-4.10.5-x86_64-3_microlinux.txz
+kde-wallpapers-4.10.5-x86_64-2_microlinux.txz
+  Rebuilt for a more sober and "corporate" default configuration.
+user-settings-kde-4.10.5-noarch-1_microlinux.txz
++---------------------------+
