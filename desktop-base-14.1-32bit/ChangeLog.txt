@@ -15,6 +15,16 @@ MPlayer-1.1.1-i486-1_microlinux.txz: Rebuilt.
 mplayer-codecs-20110131-i486-1_microlinux.txz: Added.
 jdk-7u45-i586-1_microlinux.txz: Added.
 flashplayer-plugin-11.2.202.327-i386-1_microlinux.txz: Added.
+eurostile-fonts-1.0-noarch-1_microlinux.txz: Added.
+google-droid-fonts-20100409-noarch-1_microlinux.txz: Added.
+webcore-fonts-3.0-noarch-1_microlinux.txz: Added.
+microlinux-wallpapers-1.0-noarch-1_microlinux.txz: Added.
+slack-wallpapers-0.212-noarch-1_microlinux.txz: Added.
+openoffice-4.0.1_en_US-i586-1_microlinux.txz: Added.
+openoffice-langpack-de-4.0.1-i486-1_microlinux.txz: Added.
+openoffice-langpack-fr-4.0.1-i486-1_microlinux.txz: Added.
+mozilla-firefox-l10n-24.1.1-i486-1_microlinux.txz: Added.
+mozilla-thunderbird-l10n-24.1.0-i486-1_microlinux.txz: Added.
 +---------------------------+
 Sat Nov 30 19:56:17 CET 2013
 libilbc-20131002-i486-1_microlinux.txz: Added.

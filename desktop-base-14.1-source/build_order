@@ -49,6 +49,16 @@ MPlayer
 mplayer-codecs
 jdk
 flashplayer-plugin
+eurostile-fonts
+google-droid-fonts
+webcore-fonts
+microlinux-wallpapers
+slack-wallpapers
+# openoffice          --> build manually
+# openoffice-langpack --> 
+mozilla-firefox-l10n
+mozilla-thunderbird-l10n
+
 
 
 
