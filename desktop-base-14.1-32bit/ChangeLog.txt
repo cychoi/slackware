@@ -1,3 +1,6 @@
+Mon Dec  2 18:52:44 CET 2013
+libmusicbrainz3-3.0.3-i486-1_microlinux.txz: Added.
++---------------------------+
 Mon Dec  2 17:29:46 CET 2013
 libmusicbrainz-2.1.5-i486-1_microlinux.txz: Added.
 vcdimager-0.7.24-i486-1_microlinux.txz: Added.
