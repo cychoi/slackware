@@ -1,6 +1,7 @@
 a52dec
 audacious
 audacious-plugins
+audacity
 cdlabelgen
 celt
 dirac
@@ -31,6 +32,7 @@ libmms
 libmodplug
 libmp4v2
 libmpeg2
+libmusicbrainz
 libquicktime
 libreplaygain
 libvpx
@@ -53,11 +55,14 @@ rtmpdump
 sbopkg
 schroedinger
 slack-wallpapers
+soundtouch
 speex
 transcode
 twolame
 unrar
 user-settings-console
+vcdimager
 webcore-fonts
+wxGTK
 x264
 xvidcore
