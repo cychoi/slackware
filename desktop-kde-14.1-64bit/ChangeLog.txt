@@ -1,3 +1,7 @@
+Mon Dec  2 10:37:40 CET 2013
+k3b-2.0.2-x86_64-1_microlinux.txz: Rebuilt.
+kscd-4.10.5-x86_64-1_microlinux.txz: Added.
++---------------------------+
 Sun Dec  1 15:54:23 CET 2013
 kde-baseapps-4.10.5-x86_64-2_microlinux.txz
   Rebuilt without Konqueror, since we're using Firefox.
