@@ -1,4 +1,6 @@
 a52dec
+audacious
+audacious-plugins
 cdlabelgen
 celt
 dirac
@@ -18,12 +20,14 @@ libaacs
 libass
 libavc1394
 libbluray
+libcue
 libcuefile
 libdc1394
 libdca
 libdv
 libiec61883
 libilbc
+libmms
 libmodplug
 libmp4v2
 libmpeg2
