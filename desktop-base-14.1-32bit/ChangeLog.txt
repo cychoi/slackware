@@ -1,3 +1,8 @@
+Tue Dec  3 15:35:41 CET 2013
+gtkmm3-3.8.1-i486-1_microlinux.txz: Added.
+gnote-3.10.1-i486-1_microlinux.txz: Added.
+gtkcdlabel-1.15-noarch-1_microlinux.txz: Added.
++---------------------------+
 Tue Dec  3 10:13:19 CET 2013
 scons-2.3.0-i486-1_microlinux.txz: Added.
 imlib2-1.4.5-i486-1_microlinux.txz: Added.

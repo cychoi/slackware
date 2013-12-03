@@ -91,7 +91,9 @@ pyxdg
 goocanvas
 pygoocanvas
 openshot
-
+gtkmm3
+gnote
+gtkcdlabel
 
 
 
