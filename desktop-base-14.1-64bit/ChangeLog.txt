@@ -1,3 +1,8 @@
+Tue Dec  3 16:02:06 CET 2013
+gtkmm3-3.8.1-x86_64-1_microlinux.txz: Added.
+gnote-3.10.1-x86_64-1_microlinux.txz: Added.
+gtkcdlabel-1.15-noarch-1_microlinux.txz: Added.
++---------------------------+
 Tue Dec  3 13:30:23 CET 2013
 scons-2.3.0-x86_64-1_microlinux.txz: Added.
 imlib2-1.4.5-x86_64-1_microlinux.txz: Added.
