@@ -68,6 +68,30 @@ wxGTK
 soundtouch
 audacity
 libmusicbrainz3
+scons
+imlib2
+lua
+tolua++
+conky
+smplayer
+libsigc++
+glibmm
+cairomm
+pangomm
+atkmm
+mm-common
+gtkmm
+BeautifulSoup
+lxml
+gsl
+numpy
+inkscape
+mlt
+pyxdg
+goocanvas
+pygoocanvas
+openshot
+
 
 
 
