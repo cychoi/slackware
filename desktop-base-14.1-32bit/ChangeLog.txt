@@ -1,7 +1,4 @@
 Wed Dec  4 07:53:45 CET 2013
-acpica-20130725-i486-1_microlinux.txz: Added.
-virtualbox-4.2.20-i486-1_microlinux.txz: Added.
-virtualbox-kernel-4.2.20_3.10.17_smp-i486-1_microlinux.txz: Added.
 transmission-2.77-i486-2_microlinux.txz: Added.
 +---------------------------+
 Tue Dec  3 15:35:41 CET 2013
