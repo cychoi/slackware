@@ -1,3 +1,7 @@
+Thu Dec  5 16:46:00 CET 2013
+jbig2dec-0.11-x86_64-1_microlinux.txz: Added.
+mupdf-1.2-x86_64-1_microlinux.txz: Added.
++---------------------------+
 Thu Dec  5 08:25:42 CET 2013
 acpica-20130725-x86_64-1_microlinux.txz: Added.
 virtualbox-4.2.18-x86_64-1_microlinux.txz: Added.
