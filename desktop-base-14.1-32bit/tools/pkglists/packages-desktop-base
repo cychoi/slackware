@@ -28,6 +28,7 @@ gtkmm
 gtkmm3
 imlib2
 inkscape
+jbig2dec
 jdk
 ladspa_sdk
 lame
@@ -62,6 +63,7 @@ mozilla-firefox-l10n
 mozilla-thunderbird-l10n
 MPlayer
 mplayer-codecs
+mupdf
 musepack-tools
 numpy
 OpenAL
