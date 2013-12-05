@@ -95,6 +95,10 @@ gtkmm3
 gnote
 gtkcdlabel
 transmission
+acpica
+virtualbox
+virtualbox-kernel
+virtualbox-extension-pack
 
 
 
