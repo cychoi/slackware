@@ -9,6 +9,7 @@ majeure.
 
   * Introduction
   * Documentation
+  * 14.0 => 14.1
   * 13.37 => 14.0
 
 
@@ -39,6 +40,172 @@ En dehors de cela, Eric Hameleers a rédigé un guide de mise à jour simplifié
 
 Ce HOWTO est une synthèse de ces trois documents, avec quelques petites
 astuces personnelles. 
+
+
+14.0 => 14.1
+------------
+
+Passer en init 3.
+
+Sauvegarder la configuration actuelle de la machine :
+
+  # mkdir /root/config
+  # cp -R /etc /config/
+
+Arrêter et désactiver les services inutiles pour ne garder que le strict
+minimum :
+
+  # cd /etc/rc.d
+  # ./rc.fuse stop
+  # ./rc.inetd stop
+  # chmod -x rc.fuse rc.inetd
+    ...
+
+Sur un système 64-bits, supprimer d'éventuels paquets multilib.
+
+Désactiver les dépôts de paquets tiers :
+
+--8<---------- /etc/slackpkg/slackpkgplus.conf -------------------------------
+SLACKPKGPLUS=off
+...
+--8<--------------------------------------------------------------------------
+
+  # slackpkg update
+
+Supprimer tous les paquets tiers du système :
+
+  # slackpkg clean-system
+
+  /!\ Éventuellement, conserver le paquet 'user-settings-console' pour un
+  minimum de confort d'utilisation.
+
+Désinstaller d'éventuels drivers vidéo propriétaires.
+
+Réduire le système au minimum syndical :
+
+  # slackpkg remove e f kde kdei t tcl x xap y
+
+Éditer '/etc/slackpkg/mirrors' en indiquant la nouvelle version :
+
+32-bits :
+
+--8<---------- /etc/slackpkg/mirrors -----------------------------------------
+http://mirror.ovh.net/mirrors/ftp.slackware.com/slackware-14.1/
+--8<--------------------------------------------------------------------------
+
+64-bits :
+
+--8<---------- /etc/slackpkg/mirrors -----------------------------------------
+http://mirror.ovh.net/mirrors/ftp.slackware.com/slackware64-14.1/
+--8<--------------------------------------------------------------------------
+
+  # slackpkg update
+
+Mettre à jour le paquet 'slackpkg' lui-même :
+
+  # slackpkg upgrade slackpkg
+
+  ==> (O)verwrite all old files with the new ones. The
+         old files will be stored with the suffix .orig.
+
+Refaire la configuration de '/etc/slackpkg/mirrors', qui a été écrasée par
+cette mise à jour.
+
+Garder le kernel en cours en décommentant les lignes correspondantes. On le
+mettra à jour plus tard :
+
+--8<---------- /etc/slackpkg/blacklist ---------------------------------------
+...
+kernel-firmware
+kernel-generic
+kernel-generic-smp
+kernel-headers
+kernel-huge
+kernel-huge-smp
+kernel-modules
+kernel-modules-smp
+kernel-source
+...
+--8<--------------------------------------------------------------------------
+
+  # slackpkg update
+
+Mettre à jour le paquet 'glibc-solibs' :
+
+  # slackpkg upgrade glibc-solibs
+
+Installer tous les paquets marqués 'Added' dans le fichier 'ChangeLog.txt' :
+
+  # slackpkg install-new
+
+  ==> (P)rompt K, O, R selection for every single file.
+
+  (O)verwrite pour tous.
+
+Faire un peu de ménage et supprimer les paquets qui ne sont pas strictement
+nécessaires pour l'instant :
+
+  # slackpkg remove kde kdei x xap xfce
+
+Mettre à jour les paquets existants :
+
+  # slackpkg upgrade-all
+
+  ==> (P)rompt K, O, R selection for every single file.
+
+  (O)verwrite pour tous, sauf :
+
+  * /etc/rc.d/rc.local 
+
+Vérifier :
+
+  * /etc/profile.d/lang.sh
+  * /etc/rc.d/rc.ip_forward
+  * /etc/httpd/httpd.conf
+  * /etc/httpd/httpd-ssl.conf
+  * /etc/httpd/php.ini
+
+Supprimer les paquets obsolètes :
+
+  # slackpkg clean-system
+
+Commenter les lignes concernant le kernel dans '/etc/slackpkg/blacklist' et
+mettre à jour le kernel :
+
+--8<---------- /etc/slackpkg/blacklist ---------------------------------------
+...
+#kernel-firmware
+#kernel-generic
+#kernel-generic-smp
+#kernel-headers
+#kernel-huge
+#kernel-huge-smp
+#kernel-modules
+#kernel-modules-smp
+#kernel-source
+...
+--8<--------------------------------------------------------------------------
+
+  # slackpkg upgrade-all
+
+Construire un Initrd pour le nouveau kernel et configurer LILO en conséquence.
+
+  /!\ Il faudra éditer manuellement la version du kernel dans
+  '/etc/mkinitrd.conf'. Gare au suffixe $VERSION-smp !
+
+Installer les groupes de paquets manquants :
+
+  # slackpkg install e f t tcl x y
+
+Redémarrer.
+
+Vérifier les fichiers de configuration remplaces :
+
+  # find /etc -name '*.orig'
+
+Faire le ménage :
+
+  # find /etc -name '*.orig' -exec rm -f \{} \;
 
 
 13.37 => 14.0
