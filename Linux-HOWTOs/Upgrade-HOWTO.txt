@@ -58,7 +58,6 @@ minimum :
   # cd /etc/rc.d
   # ./rc.fuse stop
   # ./rc.inetd stop
-  # chmod -x rc.fuse rc.inetd
     ...
 
 Sur un système 64-bits, supprimer d'éventuels paquets multilib.
@@ -83,7 +82,7 @@ Désinstaller d'éventuels drivers vidéo propriétaires.
 
 Réduire le système au minimum syndical :
 
-  # slackpkg remove e f kde kdei t tcl x xap y
+  # slackpkg remove e f kde kdei t tcl x xap xfce y
 
 Éditer '/etc/slackpkg/mirrors' en indiquant la nouvelle version :
 
