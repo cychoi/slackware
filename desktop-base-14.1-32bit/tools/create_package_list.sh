@@ -9,4 +9,5 @@ cat /tmp/all.txt \
   | grep -v openoffice-langpack \
   | grep -v filezilla \
   | grep -v virtualbox \
+  | grep -v broadcom-sta \
   > $CWD/pkglists/packages-desktop-base
