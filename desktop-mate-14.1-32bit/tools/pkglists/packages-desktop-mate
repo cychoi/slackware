@@ -65,3 +65,9 @@ perl-xml-twig
 system-tools-backend
 
 aero
+build_order
+clearlooks-phenix-theme
+faenza-icon-theme
+gdm
+libgnomecanvas
+user-settings-mate
