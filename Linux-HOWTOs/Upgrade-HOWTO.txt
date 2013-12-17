@@ -45,12 +45,14 @@ astuces personnelles.
 14.0 => 14.1
 ------------
 
+Si nécessaire, télécharger les nouveaux drivers propriétaires.
+
 Passer en init 3.
 
 Sauvegarder la configuration actuelle de la machine :
 
   # mkdir /root/config
-  # cp -R /etc /config/
+  # cp -R /etc /root/config/
 
 Arrêter et désactiver les services inutiles pour ne garder que le strict
 minimum :
