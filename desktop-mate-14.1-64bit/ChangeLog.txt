@@ -1,3 +1,9 @@
+Tue Dec 17 11:28:53 CET 2013
+pangox-compat-0.0.2-x86_64-1_microlinux.txz: Added.
+gtkglext-1.2.0-x86_64-1_microlinux.txz: Added.
+cairo-dock-3.3.2-x86_64-1_microlinux.txz: Added.
+cairo-dock-plugins-3.3.2-x86_64-1_microlinux.txz: Added.
++---------------------------+
 Sun Dec  8 10:59:28 CET 2013
 aero-1.0-noarch-1_microlinux.txz: Added.
 libgnomecanvas-2.30.3-x86_64-1_microlinux.txz: Added.
