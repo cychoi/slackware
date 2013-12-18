@@ -1,3 +1,16 @@
+Wed Dec 18 13:25:48 CET 2013
+compiz-bcop-0.8.8-x86_64-1_microlinux.txz: Added.
+pysetuptools-0.9.8-x86_64-1_microlinux.txz: Added.
+protobuf-2.5.0-x86_64-1_microlinux.txz: Added.
+libcompizconfig-0.8.8-x86_64-1_microlinux.txz: Added.
+compizconfig-python-0.8.4-x86_64-1_microlinux.txz: Added.
+ccsm-0.8.4-x86_64-1_microlinux.txz: Added.
+compiz-plugins-main-0.8.8-x86_64-1_microlinux.txz: Added.
+compiz-plugins-extra-0.8.8-x86_64-1_microlinux.txz: Added.
+emerald-0.8.8-x86_64-1_microlinux.txz: Added.
+emerald-themes-0.6.0-x86_64-1_microlinux.txz: Added.
+fusion-icon-20080213-x86_64-1_microlinux.txz: Added.
++---------------------------+
 Tue Dec 17 11:28:53 CET 2013
 pangox-compat-0.0.2-x86_64-1_microlinux.txz: Added.
 gtkglext-1.2.0-x86_64-1_microlinux.txz: Added.
