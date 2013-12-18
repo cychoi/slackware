@@ -8,5 +8,19 @@ pangox-compat
 gtkglext
 cairo-dock
 cairo-dock-plugins
+compiz-bcop
+pysetuptools
+protobuf
+libcompizconfig
+compizconfig-python
+ccsm
+compiz-plugins-main
+compiz-plugins-extra
+emerald
+emerald-themes
+fusion-icon
+
+
+
 
 
