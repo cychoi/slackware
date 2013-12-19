@@ -5,4 +5,5 @@ ls $CWD/../../desktop-xfce-14.1-source \
   > /tmp/all.txt
 cat /tmp/all.txt \
   | grep -v all.SlackBuild \
-  >> $CWD/pkglists/packages-desktop-xfce
+  | grep -v build_order \
+  > $CWD/pkglists/packages-desktop-xfce
