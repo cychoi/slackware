@@ -1,13 +1,13 @@
 Thu Dec 19 08:33:47 CET 2013
-slackware/libunique-1.1.6-i486-1_microlinux.txz
-slackware/gst-ffmpeg-0.10.13-i486-1_microlinux.txz
-slackware/gst-plugins-bad-0.10.23-i486-1_microlinux.txz
-slackware/gst-plugins-ugly-0.10.19-i486-1_microlinux.txz
-slackware/totem-pl-parser-3.4.5-i486-1_microlinux.txz
-slackware/libburn-1.3.4-i486-1_microlinux.txz
-slackware/libisofs-1.3.4-i486-1_microlinux.txz
-slackware/libisoburn-1.3.4-i486-1_microlinux.txz
-slackware/brasero-2.32.1-i486-1_microlinux.txz
+libunique-1.1.6-i486-1_microlinux.txz: Added.
+gst-ffmpeg-0.10.13-i486-1_microlinux.txz: Added.
+gst-plugins-bad-0.10.23-i486-1_microlinux.txz: Added.
+gst-plugins-ugly-0.10.19-i486-1_microlinux.txz: Added.
+totem-pl-parser-3.4.5-i486-1_microlinux.txz: Added.
+libburn-1.3.4-i486-1_microlinux.txz: Added.
+libisofs-1.3.4-i486-1_microlinux.txz: Added.
+libisoburn-1.3.4-i486-1_microlinux.txz: Added.
+brasero-2.32.1-i486-1_microlinux.txz: Added.
 +---------------------------+
 Thu Dec 19 06:42:34 CET 2013
 gtk-engines-2.20.2-i486-1_microlinux.txz: Added.
