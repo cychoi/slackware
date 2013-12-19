@@ -1,0 +1,9 @@
+Thu Dec 19 06:42:34 CET 2013
+gtk-engines-2.20.2-i486-1_microlinux.txz: Added.
+clearlooks-phenix-theme-20131129-noarch-1_microlinux.txz: Added.
+aero-1.0-noarch-1_microlinux.txz: Added.
+xfwm4-theme-axe-1.0-noarch-1_microlinux.txz: Added.
+libgnomecanvas-2.30.3-i486-1_microlinux.txz: Added.
+gdm-2.20.11-i486-1_microlinux.txz: Added.
+user-settings-xfce-1.0-noarch-1_microlinux.txz: Added.
++---------------------------+
