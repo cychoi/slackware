@@ -6,4 +6,13 @@ libgnomecanvas
 gdm
 user-settings-xfce
 faenza-icon-theme
+libunique
+gst-ffmpeg
+gst-plugins-bad
+gst-plugins-ugly
+totem-pl-parser
+libburn
+libisofs
+libisoburn
+brasero
 
