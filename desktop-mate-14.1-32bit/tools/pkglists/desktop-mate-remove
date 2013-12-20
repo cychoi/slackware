@@ -211,7 +211,6 @@ geeqie
 gkrellm
 gnuchess
 gnuplot
-gucharmap
 gv
 pan
 rdesktop
@@ -235,7 +234,6 @@ xv
 xxgdb
 
 # XFCE
-Terminal
 Thunar
 exo
 garcon
@@ -258,6 +256,7 @@ xfce4-session
 xfce4-settings
 xfce4-systemload-plugin
 xfce4-taskmanager
+xfce4-terminal
 xfce4-volumed
 xfce4-weather-plugin
 xfconf

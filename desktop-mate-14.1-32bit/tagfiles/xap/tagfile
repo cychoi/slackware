@@ -1,7 +1,11 @@
 # Add
+MPlayer:ADD
+audacious:ADD
+audacious-plugins:ADD
 fluxbox:ADD
 gftp:ADD
 gimp:ADD
+gucharmap:ADD
 imagemagick:ADD
 mozilla-firefox:ADD
 mozilla-thunderbird:ADD
@@ -13,9 +17,6 @@ xine-lib:ADD
 xscreensaver:ADD
 
 # Skip
-MPlayer:SKP
-audacious:SKP
-audacious-plugins:SKP
 blackbox:SKP
 blueman:SKP
 ddd:SKP
@@ -25,7 +26,6 @@ geeqie:SKP
 gkrellm:SKP
 gnuchess:SKP
 gnuplot:SKP
-gucharmap:SKP
 gv:SKP
 pan:SKP
 rdesktop:SKP
