@@ -1,3 +1,9 @@
+Fri Dec 20 17:09:25 CET 2013
+gthumb-3.2.4-i486-1_microlinux.txz: Added.
+simple-scan-2.32.0.2-i486-1_microlinux.txz: Added.
+asunder-2.3-i486-1_microlinux.txz: Added.
+gcolor2-0.4-i486-1_microlinux.txz: Added.
++---------------------------+
 Wed Dec 18 16:42:43 CET 2013
 gst-ffmpeg-0.10.13-i486-1_microlinux.txz: Added.
 gst-plugins-bad-0.10.23-i486-1_microlinux.txz: Added.
