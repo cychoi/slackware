@@ -1,3 +1,9 @@
+Fri Dec 20 17:22:08 CET 2013
+gthumb-3.2.4-x86_64-1_microlinux.txz: Added.
+simple-scan-2.32.0.2-x86_64-1_microlinux.txz: Added.
+asunder-2.3-x86_64-1_microlinux.txz: Added.
+gcolor2-0.4-x86_64-1_microlinux.txz: Added.
++---------------------------+
 Wed Dec 18 17:04:41 CET 2013
 gst-ffmpeg-0.10.13-x86_64-1_microlinux.txz: Added.
 gst-plugins-bad-0.10.23-x86_64-1_microlinux.txz: Added.
