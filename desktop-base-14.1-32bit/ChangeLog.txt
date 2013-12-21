@@ -5,8 +5,8 @@ gnote-0.7.6-i486-1_microlinux.txz: Downgraded.
 	to this very old version, which works perfectly. 
 +---------------------------+
 Wed Dec 18 10:02:14 CET 2013
-mozilla-firefox-l10n-24.2.0-i486-1_microlinux.txz
-mozilla-thunderbird-l10n-24.2.0-i486-1_microlinux.txz
+mozilla-firefox-l10n-24.2.0-i486-1_microlinux.txz: Upgraded.
+mozilla-thunderbird-l10n-24.2.0-i486-1_microlinux.txz: Upgraded.
 +---------------------------+
 Tue Dec 17 08:18:15 CET 2013
 sbopkg-0.37.0-noarch-1_microlinux.txz: Upgraded.
