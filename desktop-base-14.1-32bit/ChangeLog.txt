@@ -1,3 +1,13 @@
+Sat Dec 21 08:16:58 CET 2013
+gnote-0.7.6-i486-1_microlinux.txz: Downgraded.
+  The new version of Gnote is affected by a bug which makes it disappear from
+	the system tray when closing a note. Until we can sort this out, we'll revert
+	to this very old version, which works perfectly. 
++---------------------------+
+Wed Dec 18 10:02:14 CET 2013
+mozilla-firefox-l10n-24.2.0-i486-1_microlinux.txz
+mozilla-thunderbird-l10n-24.2.0-i486-1_microlinux.txz
++---------------------------+
 Tue Dec 17 08:18:15 CET 2013
 sbopkg-0.37.0-noarch-1_microlinux.txz: Upgraded.
 +---------------------------+
