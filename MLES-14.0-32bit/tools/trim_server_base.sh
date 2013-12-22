@@ -25,11 +25,11 @@ for PACKAGE in $(find /var/log/packages); do
   touch $TMP/$PACKAGENAME
 done
 
+echo
+echo ":: Removing unneeded packages."
+echo
 for PACKAGE in $CRUFT; do
   if [ -r $TMP/$PACKAGE ] ; then
-    echo
-    echo ":: Removing unneeded packages."
-    echo
     sleep 3
     /sbin/removepkg ${PACKAGE} 
   fi
