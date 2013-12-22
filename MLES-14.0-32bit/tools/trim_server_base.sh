@@ -3,8 +3,9 @@
 # trim_server_base.sh
 #
 # This script prepares the system before building or installing the Microlinux
-# Enterprise Server. It removes unneeded packages and installs needed ones. You
-# should run 'slackpkg update' before calling it.
+# Enterprise Server. It removes unneeded packages and installs needed ones. 
+#
+# You should configure slackpkg and run 'slackpkg update' before calling it.
 #
 
 CWD=$(pwd)
@@ -16,27 +17,31 @@ rm -rf $TMP
 mkdir $TMP
 
 echo
-echo ":: Checking installed packages."
+echo
+echo ":: Checking installed packages on your system..."
 echo
 sleep 3
 for PACKAGE in $(find /var/log/packages); do
   PACKAGENAME=$(echo $PACKAGE |cut -f5 -d'/' |rev |cut -f4- -d'-' |rev)
-  echo ":: Package $PACKAGENAME is installed on your system."
   touch $TMP/$PACKAGENAME
 done
 
 echo
-echo ":: Removing unneeded packages."
+echo ":: Checking for packages to te removed from your system..."
 echo
+sleep 3
 for PACKAGE in $CRUFT; do
   if [ -r $TMP/$PACKAGE ] ; then
-    sleep 3
     /sbin/removepkg ${PACKAGE} 
   fi
 done
 
 unset PACKAGES
 
+echo 
+echo ":: Checking for packages to be installed on your system..."
+echo 
+sleep 3
 for PACKAGE in $INSTALL; do
   if [ ! -r $TMP/$PACKAGE ] ; then
     PACKAGES="$PACKAGES $PACKAGE"
@@ -46,15 +51,12 @@ done
 if [ -z "$PACKAGES" ]; then
   continue
 else
-  echo 
-  echo ":: Installing necessary packages."
-  echo 
-  sleep 3
   /usr/sbin/slackpkg install $PACKAGES
 fi
 
 rm -rf $TMP
 
 echo
-echo ":: System is ready for building/installing MLES 14.0."
+echo ":: Your system is ready for building/installing MLES 14.0."
 echo
+echo 
