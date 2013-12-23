@@ -1,17 +1,17 @@
 #!/bin/sh
 #
-# trim_server_base.sh
+# trim_desktop_base.sh
 #
 # This script prepares the system before building or installing the Microlinux
-# Enterprise Server. It removes unneeded packages and installs needed ones. 
+# Enterprise Desktop. It removes unneeded packages and installs needed ones. 
 #
 # You should configure slackpkg and run 'slackpkg update' before calling it.
 #
 
 CWD=$(pwd)
 PKGINFO=/tmp/pkg_database
-CRUFT=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/server-base-remove)
-INSTALL=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/server-base-add)
+CRUFT=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/desktop-base-remove)
+INSTALL=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/desktop-base-add)
 
 rm -rf $PKGINFO
 mkdir $PKGINFO
@@ -65,7 +65,7 @@ rm -rf $PKGINFO
 
 echo
 echo "+=============================================================================="
-echo "| Your system is ready for building/installing MLES 14.0."
+echo "| Your system is ready for building/installing MLED 14.0."
 echo "+=============================================================================="
 echo
 echo 
