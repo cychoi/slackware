@@ -9,29 +9,32 @@
 #
 
 CWD=$(pwd)
-TMP=/tmp/pkg_database
+PKGINFO=/tmp/pkg_database
 CRUFT=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/server-base-remove)
 INSTALL=$(egrep -v '(^\#)|(^\s+$)' $CWD/pkglists/server-base-add)
 
-rm -rf $TMP
-mkdir $TMP
+rm -rf $PKGINFO
+mkdir $PKGINFO
 
 echo
-echo
-echo ":: Checking installed packages on your system..."
+echo "+=============================================================================="
+echo "| Checking installed packages on your system..."
+echo "+=============================================================================="
 echo
 sleep 3
 for PACKAGE in $(find /var/log/packages); do
   PACKAGENAME=$(echo $PACKAGE |cut -f5 -d'/' |rev |cut -f4- -d'-' |rev)
-  touch $TMP/$PACKAGENAME
+  touch $PKGINFO/$PACKAGENAME
 done
 
 echo
-echo ":: Checking for packages to te removed from your system..."
+echo "+=============================================================================="
+echo "| Checking for packages to te removed from your system..."
+echo "+=============================================================================="
 echo
 sleep 3
 for PACKAGE in $CRUFT; do
-  if [ -r $TMP/$PACKAGE ] ; then
+  if [ -r $PKGINFO/$PACKAGE ] ; then
     /sbin/removepkg ${PACKAGE} 
   fi
 done
@@ -39,11 +42,13 @@ done
 unset PACKAGES
 
 echo 
-echo ":: Checking for packages to be installed on your system..."
+echo "+=============================================================================="
+echo "| Checking for packages to be installed on your system..."
+echo "+=============================================================================="
 echo 
 sleep 3
 for PACKAGE in $INSTALL; do
-  if [ ! -r $TMP/$PACKAGE ] ; then
+  if [ ! -r $PKGINFO/$PACKAGE ] ; then
     PACKAGES="$PACKAGES $PACKAGE"
   fi
 done
@@ -54,9 +59,11 @@ else
   /usr/sbin/slackpkg install $PACKAGES
 fi
 
-rm -rf $TMP
+rm -rf $PKGINFO
 
 echo
-echo ":: Your system is ready for building/installing MLES 14.0."
+echo "+=============================================================================="
+echo "| Your system is ready for building/installing MLES 14.0."
+echo "+=============================================================================="
 echo
 echo 
