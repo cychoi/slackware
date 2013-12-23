@@ -1,0 +1,24 @@
+Mon Dec 23 17:04:27 CET 2013
+ap/user-settings-console-1.0-noarch-2_microlinux.txz: Added.
+ap/sbopkg-0.36.0-noarch-2_microlinux.txz: Added.
+ap/recode-3.6-i486-4_microlinux.txz: Added.
+ap/cdlabelgen-4.3.0-noarch-2_microlinux.txz: Added.
+ap/p7zip-9.20.1-i486-2_microlinux.txz: Added.
+ap/unrar-4.0.7-i486-2_microlinux.txz: Added.
+d/acpica-20130725-i486-1_microlinux.txz: Added.
+d/gc-7.2d-i486-2_microlinux.txz: Added.
+d/lua-5.1.5-i486-2_microlinux.txz: Added.
+d/numpy-1.6.2-i486-2_microlinux.txz: Added.
+d/orc-0.4.16-i486-2_microlinux.txz: Added.
+d/jdk-7u45-i586-1_microlinux.txz: Added.
+d/scons-2.2.0-i486-2_microlinux.txz: Added.
+l/BeautifulSoup-3.2.0-i486-2_microlinux.txz: Added.
+l/cddb-py-1.4-i486-2_microlinux.txz: Added.
+l/enca-1.14-i486-2_microlinux.txz: Added.
+l/gsl-1.16-i486-1_microlinux.txz: Added.
+l/imlib2-1.4.5-i486-2_microlinux.txz: Added.
+l/libevent-2.0.21-i486-2_microlinux.txz: Added.
+l/libburn-1.3.0-i486-1_microlinux.txz: Added.
+l/libisofs-1.3.0-i486-1_microlinux.txz: Added.
+l/libisoburn-1.3.0-i486-1_microlinux.txz: Added.
++---------------------------+
