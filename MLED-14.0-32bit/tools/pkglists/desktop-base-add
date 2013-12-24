@@ -915,6 +915,7 @@ network-manager-applet
 pidgin 
 sane 
 windowmaker 
+xine-lib 
 
 # XFCE
 Terminal 
