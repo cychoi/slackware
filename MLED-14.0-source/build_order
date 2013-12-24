@@ -72,4 +72,12 @@ l/gst-plugins-bad
 l/gst-plugins-ugly
 l/libmpeg2
 ap/transcode
+x/google-droid-fonts
+x/webcore-fonts
+x/eurostile-fonts
+xfce/slack-wallpapers
+xfce/microlinux-wallpapers
+l/libmusicbrainz3
+xap/openoffice
+# xap/openoffice-langpack --> build manually
 
