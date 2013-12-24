@@ -1,3 +1,14 @@
+Tue Dec 24 13:24:47 CET 2013
+x/google-droid-fonts-20100409-noarch-2_microlinux.txz: Added.
+x/webcore-fonts-3.0-noarch-4_microlinux.txz: Added.
+x/eurostile-fonts-1.0-noarch-2_microlinux.txz: Added.
+xfce/slack-wallpapers-0.212-noarch-3_microlinux.txz: Added.
+xfce/microlinux-wallpapers-1.0-noarch-3_microlinux.txz: Added.
+l/libmusicbrainz3-3.0.3-x86_64-2_microlinux.txz: Added.
+xap/openoffice-4.0.1_en_US-x86_64-2_microlinux.txz: Added.
+xap/openoffice-langpack-fr-4.0.1-x86_64-1_microlinux.txz: Added.
+xap/openoffice-langpack-de-4.0.1-x86_64-1_microlinux.txz: Added.
++---------------------------+
 Tue Dec 24 10:27:35 CET 2013
 l/libiec61883-1.2.0-x86_64-3_microlinux.txz: Added.
 l/libkate-0.4.1-x86_64-2_microlinux.txz: Added.
