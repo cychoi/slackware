@@ -1,3 +1,24 @@
+Tue Dec 24 09:19:59 CET 2013
+l/a52dec-0.7.4-x86_64-2_microlinux.txz
+l/celt-0.11.3-x86_64-2_microlinux.txz
+ap/dirac-1.0.2-x86_64-2_microlinux.txz
+ap/faad2-2.7-x86_64-2_microlinux.txz
+l/flash-player-plugin-11.2.202.310-x86_64-1_microlinux.txz
+l/frei0r-1.3-x86_64-2_microlinux.txz
+l/gsm-1.0.13-x86_64-2_microlinux.txz
+l/gst-ffmpeg-0.10.13-x86_64-2_microlinux.txz
+ap/lame-3.99.5-x86_64-2_microlinux.txz
+l/libavc1394-0.5.3-x86_64-3_microlinux.txz
+l/libaacs-0.6.0-x86_64-1_microlinux.txz
+l/libbluray-0.2.3-x86_64-2_microlinux.txz
+l/libcdaudio-0.99.12p2-x86_64-2_microlinux.txz
+l/libcuefile-r453-x86_64-2_microlinux.txz
+l/libdc1394-2.2.0-x86_64-2_microlinux.txz
+l/libdca-0.0.5-x86_64-2_microlinux.txz
+l/libdv-1.0.0-x86_64-2_microlinux.txz
+l/libdvdcss-1.2.11-x86_64-2_microlinux.txz
+l/libdvdnav-4.2.0-x86_64-2_microlinux.txz
++---------------------------+
 Mon Dec 23 17:04:27 CET 2013
 ap/user-settings-console-1.0-noarch-2_microlinux.txz: Added.
 ap/sbopkg-0.36.0-noarch-2_microlinux.txz: Added.
