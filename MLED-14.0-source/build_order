@@ -80,4 +80,14 @@ xfce/microlinux-wallpapers
 l/libmusicbrainz3
 xap/openoffice
 # xap/openoffice-langpack --> build manually
+xfce/aero
+l/gtk-engines
+xfce/clearlooks-phenix-theme
+xfce/faenza-icon-theme
+xfce/Terminal
+xfce/xarchiver
+xfce/thunar-archive-plugin
+xfce/xfwm4-theme-axe
+xfce/xfce4-xkb-plugin
+xfce/user-settings-xfce
 
