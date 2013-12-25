@@ -1,5 +1,4 @@
 Mon Dec 23 07:04:19 CET 2013
-
 Microlinux Enterprise Server 14.0 32-bit released! This is an LTS release,
 which means packages will be maintained for as long as the underlying Slackware
 system is officially supported.
