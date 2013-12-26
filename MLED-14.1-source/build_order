@@ -21,3 +21,22 @@ d/lua
 d/numpy
 d/orc
 d/scons
+
+######################
+# GNOME dependencies #
+######################
+gnome/libgnomecups
+gnome/libgnomeprint
+gnome/libgnomecanvas
+gnome/libgnomeprintui
+gnome/totem-pl-parser
+gnome/libsigc++
+gnome/glibmm
+gnome/cairomm
+gnome/pangomm
+gnome/atkmm
+gnome/mm-common
+gnome/gtkmm
+gnome/goocanvas
+gnome/pygoocanvas
+
