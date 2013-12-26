@@ -6,27 +6,27 @@ profile/user-settings-console
 ###################
 # Basic utilities #
 ###################
-ap/sbopkg
-ap/recode
-ap/unrar
-ap/p7zip
-ap/cdlabelgen
+#ap/sbopkg
+#ap/recode
+#ap/unrar
+#ap/p7zip
+#ap/cdlabelgen
 
 ######################
 # GNOME dependencies #
 ######################
-gnome/dconf
-gnome/libgnomecups
-gnome/libgnomeprint
-gnome/libgnomecanvas
-gnome/libgnomeprintui
-gnome/totem-pl-parser
-gnome/libsigc++
-gnome/glibmm
-gnome/cairomm
-gnome/pangomm
-gnome/atkmm
-gnome/mm-common
-gnome/gtkmm
-gnome/goocanvas
-gnome/pygoocanvas
+#gnome/dconf
+#gnome/libgnomecups
+#gnome/libgnomeprint
+#gnome/libgnomecanvas
+#gnome/libgnomeprintui
+#gnome/totem-pl-parser
+#gnome/libsigc++
+#gnome/glibmm
+#gnome/cairomm
+#gnome/pangomm
+#gnome/atkmm
+#gnome/mm-common
+#gnome/gtkmm
+#gnome/goocanvas
+#gnome/pygoocanvas
