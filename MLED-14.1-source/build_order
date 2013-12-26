@@ -39,4 +39,19 @@ gnome/mm-common
 gnome/gtkmm
 gnome/goocanvas
 gnome/pygoocanvas
+gnome/libunique
+
+#####################
+# Various libraries #
+#####################
+l/libburn
+l/libisofs
+l/libisoburn
+l/gsl
+l/BeautifulSoup
+l/lxml
+l/pyxdg
+l/imlib2
+l/tolua++
+l/wxGTK
 
