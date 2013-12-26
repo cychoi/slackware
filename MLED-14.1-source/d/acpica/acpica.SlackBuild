@@ -84,7 +84,6 @@ cd generate/unix
   CFLAGS="$SLKCFLAGS" \
   CXXFLAGS="$SLKCFLAGS" \
   make $NUMJOBS BITS=$BITS
-
   make install DESTDIR=$PKG
 cd -
 

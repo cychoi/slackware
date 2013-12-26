@@ -11,3 +11,13 @@ ap/recode
 ap/unrar
 ap/p7zip
 ap/cdlabelgen
+
+###############
+# Development #
+###############
+d/acpica
+d/jdk
+d/lua
+d/numpy
+d/orc
+d/scons
