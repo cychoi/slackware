@@ -161,6 +161,7 @@ gnome/gdm
 ################
 # Applications #
 ################
+xap/MPlayer
 xap/openoffice
 
 ################
