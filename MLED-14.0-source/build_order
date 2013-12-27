@@ -136,6 +136,7 @@ xfce/clearlooks-phenix-theme
 xfce/xfwm4-theme-axe
 xfce/microlinux-wallpapers
 xfce/slack-wallpapers
+xfce/Terminal
 xfce/xarchiver
 xfce/thunar-archive-plugin
 xfce/xfce4-xkb-plugin
@@ -161,6 +162,7 @@ gnome/gdm
 ################
 # Applications #
 ################
+xap/MPlayer
 xap/openoffice
 
 ################
