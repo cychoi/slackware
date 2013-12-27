@@ -54,6 +54,8 @@ l/libevent
 l/gsl
 l/BeautifulSoup
 l/lxml
+l/pysetuptools
+l/protobuf
 l/pyxdg
 l/imlib2
 l/tolua++
@@ -116,3 +118,61 @@ multimedia/gst-plugins-bad
 multimedia/gst-plugins-ugly
 multimedia/libmpeg2
 multimedia/transcode
+
+#########
+# Fonts #
+#########
+x/google-droid-fonts
+x/webcore-fonts
+x/eurostile-fonts
+
+################
+# Xfce desktop #
+################
+xfce/aero
+xfce/faenza-icon-theme
+xfce/gtk-engines
+xfce/clearlooks-phenix-theme
+xfce/xfwm4-theme-axe
+xfce/microlinux-wallpapers
+xfce/slack-wallpapers
+xfce/xarchiver
+xfce/thunar-archive-plugin
+xfce/xfce4-xkb-plugin
+
+##########
+# Compiz #
+##########
+x/compiz-bcop
+x/libcompizconfig
+x/compizconfig-python
+x/ccsm
+x/compiz-plugins-main
+x/compiz-plugins-extra
+x/emerald
+x/emerald-themes
+x/fusion-icon
+
+#################
+# Login manager #
+#################
+gnome/gdm
+
+################
+# Applications #
+################
+xap/openoffice
+
+################
+# Translations #
+################
+locale/mozilla-firefox-l10n
+locale/mozilla-thunderbird-l10n
+# locale/openoffice --> build manually
+
+#########################
+# Desktop configuration #
+#########################
+profile/user-settings-xfce
+
+
