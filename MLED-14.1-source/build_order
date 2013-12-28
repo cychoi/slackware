@@ -44,6 +44,7 @@ gnome/libunique
 #####################
 # Various libraries #
 #####################
+l/cryptopp
 l/enca
 l/jbig2dec
 l/libburn
@@ -164,6 +165,7 @@ gnome/gdm
 # Applications #
 ################
 xap/MPlayer
+xap/aMule
 xap/audacious
 xap/audacious-plugins
 xap/audacity
@@ -171,6 +173,8 @@ xap/easytag
 xap/filezilla
 xap/mupdf
 xap/openoffice
+xap/smplayer
+xap/transmission
 
 ################
 # Translations #
