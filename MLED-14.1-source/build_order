@@ -175,6 +175,9 @@ xap/mupdf
 xap/openoffice
 xap/smplayer
 xap/transmission
+xap/virtualbox
+xap/virtualbox-kernel
+xap/virtualbox-extension-pack
 
 ################
 # Translations #
