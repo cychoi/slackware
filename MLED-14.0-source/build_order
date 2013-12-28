@@ -179,8 +179,12 @@ gnome/evince
 xap/filezilla
 xap/galculator
 xap/gcolor2
+gnome/gnote
+gnome/gthumb
+xap/inkscape
 xap/mupdf
 xap/openoffice
+xap/openshot
 xap/smplayer
 xap/transmission
 xap/virtualbox
