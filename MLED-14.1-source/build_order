@@ -45,6 +45,7 @@ gnome/libunique
 # Various libraries #
 #####################
 l/enca
+l/jbig2dec
 l/libburn
 l/libisofs
 l/libisoburn
@@ -165,6 +166,7 @@ xap/MPlayer
 xap/audacious
 xap/audacious-plugins
 xap/audacity
+xap/mupdf
 xap/openoffice
 
 ################
