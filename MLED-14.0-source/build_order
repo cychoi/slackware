@@ -74,6 +74,7 @@ multimedia/flash-player-plugin
 multimedia/frei0r
 multimedia/gsm
 multimedia/gst-ffmpeg
+multimedia/id3lib
 multimedia/lame
 multimedia/libavc1394
 multimedia/libaacs
@@ -167,6 +168,8 @@ xap/MPlayer
 xap/audacious
 xap/audacious-plugins
 xap/audacity
+xap/easytag
+xap/filezilla
 xap/mupdf
 xap/openoffice
 
