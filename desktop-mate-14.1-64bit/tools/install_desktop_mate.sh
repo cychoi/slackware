@@ -1,1 +1,0 @@
-../../desktop-mate-14.1-32bit/tools/install_desktop_mate.sh

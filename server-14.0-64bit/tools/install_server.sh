@@ -1,1 +1,0 @@
-../../server-14.0-32bit/tools/install_server.sh

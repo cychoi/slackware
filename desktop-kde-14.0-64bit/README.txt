@@ -1,1 +1,0 @@
-../desktop-kde-14.0-32bit/README.txt

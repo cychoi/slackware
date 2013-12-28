@@ -1,1 +1,0 @@
-../../desktop-xfce-14.0-32bit/tools/install_desktop_xfce.sh

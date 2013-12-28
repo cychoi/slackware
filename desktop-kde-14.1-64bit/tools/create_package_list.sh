@@ -1,1 +1,0 @@
-../../desktop-kde-14.1-32bit/tools/create_package_list.sh
