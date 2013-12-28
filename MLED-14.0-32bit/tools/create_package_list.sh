@@ -19,5 +19,5 @@ cat $TEMPFILE \
   | grep -v openoffice-langpack \
   | grep -v filezilla \
   | grep -v virtualbox \
-  > $CWD/pkglists/packages-desktop-base
+  > $CWD/pkglists/packages-MLED
 

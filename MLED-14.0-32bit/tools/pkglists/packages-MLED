@@ -16,6 +16,14 @@ jdk
 lua
 numpy
 orc
+perl-cairo
+perl-event
+perl-extutils-depends
+perl-extutils-pkgconfig
+perl-glib
+perl-gtk2
+perl-libintl
+perl-pango
 scons
 
 # gnome
@@ -103,10 +111,12 @@ libreplaygain
 libshout
 libvpx
 live555
+lsdvd
 mjpegtools
 mlt
 mplayer-codecs
 musepack-tools
+ogmtools
 OpenAL
 opencore-amr
 openjpeg
@@ -114,11 +124,16 @@ rtmpdump
 schroedinger
 soundtouch
 speex
+subtitleripper
 transcode
 twolame
 vcdimager
 x264
+xvid4conf
 xvidcore
+
+# n
+fping
 
 # profile
 user-settings-console
@@ -146,14 +161,19 @@ audacious-plugins
 audacity
 catfish
 conky
+dvdrip
 easytag
 galculator
 gcolor2
+gtkcdlabel
 inkscape
+leafpad
 MPlayer
 mupdf
 openoffice
 openshot
+poedit
+simple-scan
 smplayer
 transmission
 
