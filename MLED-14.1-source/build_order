@@ -162,6 +162,9 @@ gnome/gdm
 # Applications #
 ################
 xap/MPlayer
+xap/audacious
+xap/audacious-plugins
+xap/audacity
 xap/openoffice
 
 ################
