@@ -9,7 +9,7 @@ echo "#####################" > $TEMPFILE
 echo "# MLED package list #" >> $TEMPFILE
 echo "#####################" >> $TEMPFILE
 
-for PKGGROUP in ap d gnome l locale multimedia profile x xap xfce; do
+for PKGGROUP in ap d gnome l locale multimedia n profile x xap xfce; do
   echo >> $TEMPFILE
   echo "# $PKGGROUP" >> $TEMPFILE
   ls $SOURCEDIR/$PKGGROUP \
