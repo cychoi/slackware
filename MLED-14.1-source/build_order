@@ -180,10 +180,14 @@ xap/galculator
 xap/gcolor2
 gnome/gnote
 gnome/gthumb
+xap/gtkcdlabel
 xap/inkscape
+xap/leafpad
 xap/mupdf
 xap/openoffice
 xap/openshot
+xap/poedit
+xap/simple-scan
 xap/smplayer
 xap/transmission
 xap/virtualbox
