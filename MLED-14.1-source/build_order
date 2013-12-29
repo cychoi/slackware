@@ -11,6 +11,7 @@ ap/recode
 ap/unrar
 ap/p7zip
 ap/cdlabelgen
+n/fping
 
 ###############
 # Development #
@@ -20,6 +21,14 @@ d/jdk
 d/lua
 d/numpy
 d/orc
+d/perl-extutils-depends
+d/perl-extutils-pkgconfig
+d/perl-cairo
+d/perl-glib
+d/perl-pango
+d/perl-gtk2
+d/perl-event
+d/perl-libintl
 d/scons
 
 ######################
@@ -96,8 +105,10 @@ multimedia/libmusicbrainz3
 multimedia/libreplaygain
 multimedia/libvpx
 multimedia/live555
+multimedia/lsdvd
 multimedia/mjpegtools
 multimedia/mplayer-codecs
+multimedia/ogmtools
 multimedia/OpenAL
 multimedia/opencore-amr
 multimedia/openjpeg
@@ -105,10 +116,12 @@ multimedia/opus
 multimedia/rtmpdump
 multimedia/soundtouch
 multimedia/speex
+multimedia/subtitleripper
 multimedia/twolame
 multimedia/vcdimager
 multimedia/x264
 multimedia/xvidcore
+multimedia/xvid4conf
 multimedia/faac
 multimedia/libass
 multimedia/libshout
@@ -173,6 +186,7 @@ xap/audacity
 gnome/brasero
 xap/catfish
 xap/conky
+xap/dvdrip
 xap/easytag
 gnome/evince
 xap/filezilla
