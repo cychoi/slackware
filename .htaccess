@@ -52,12 +52,12 @@ AddDefaultCharset uft-8
   AddDescription "Work in progress" MLES-14.1-32bit
   AddDescription "Work in progress" MLES-14.1-64bit
   AddDescription "Work in progress" MLES-14.1-source
-  AddDescription "Work in progress" MLED-14.0-32bit
-  AddDescription "Work in progress" MLED-14.0-64bit
-  AddDescription "Work in progress" MLED-14.0-source
-  AddDescription "Work in progress" MLED-14.1-32bit
-  AddDescription "Work in progress" MLED-14.1-64bit
-  AddDescription "Work in progress" MLED-14.1-source
+  AddDescription "Microlinux Enterprise Desktop 14.0 32-bit" MLED-14.0-32bit
+  AddDescription "Microlinux Enterprise Desktop 14.0 64-bit" MLED-14.0-64bit
+  AddDescription "Microlinux Enterprise Desktop 14.0 source" MLED-14.0-source
+  AddDescription "Microlinux Enterprise Desktop 14.1 32-bit" MLED-14.1-32bit
+  AddDescription "Microlinux Enterprise Desktop 14.1 64-bit" MLED-14.1-64bit
+  AddDescription "Microlinux Enterprise Desktop 14.1 source" MLED-14.1-source
   AddDescription "Plain text file" .txt README
   AddDescription "Slackware build script" .SlackBuild
   AddDescription "Slackware package" .txz
