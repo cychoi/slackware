@@ -1,11 +1,13 @@
 ===================
-BUGS & KNOWN ISSUES
+BUGS & KNOWN ISSUES Niki Kovacs <info@microlinux.fr>
 ===================
 
-Here's a list of known problems and bugs in MLED and MLES.
+Here's a list of known problems and bugs in MLED and MLES. If you think you
+have found a bug, don't hesitate to let my know by either sending me an email
+or posting a message on LinuxQuestions.org.
 
-  [ ] = pending
-  [X] = solved
+[ ] = pending
+[X] = solved
 
 
 MLED 14.1
@@ -13,7 +15,7 @@ MLED 14.1
 
 [ ] Missing server icons in Thunar for Samba shares.
 [ ] xscreensaver missing from package list and tagfiles.
-[X] Transmission doesn't keep its settings.
+[X] Transmission doesn't keep its settings. 
 
 
 MLED 14.0
