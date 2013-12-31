@@ -65,6 +65,7 @@ l/libevent
 l/gsl
 l/BeautifulSoup
 l/lxml
+l/podofo
 l/pysetuptools
 l/protobuf
 l/pyxdg
@@ -202,6 +203,7 @@ xap/mupdf
 xap/openoffice
 xap/openshot
 xap/poedit
+xap/scribus
 xap/simple-scan
 xap/smplayer
 xap/transmission
