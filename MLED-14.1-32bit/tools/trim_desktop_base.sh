@@ -65,7 +65,7 @@ rm -rf $PKGINFO
 
 echo
 echo "+=============================================================================="
-echo "| Your system is ready for building/installing MLED 14.0."
+echo "| Your system is ready for building/installing MLED 14.1."
 echo "+=============================================================================="
 echo
 echo 
