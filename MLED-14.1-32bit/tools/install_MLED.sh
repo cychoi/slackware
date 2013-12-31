@@ -51,6 +51,6 @@ rm -rf $PKGINFO
 
 echo 
 echo "+=============================================================================="
-echo "| Microlinux Enterprise Desktop 14.0 installed!"
+echo "| Microlinux Enterprise Desktop 14.1 installed!"
 echo "+=============================================================================="
 echo 
