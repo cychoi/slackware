@@ -4,11 +4,16 @@ BUGS & KNOWN ISSUES
 
 Here's a list of known problems and bugs in MLED and MLES.
 
+  [ ] = pending
+  [X] = solved
+
+
 MLED 14.1
 ---------
 
 [ ] Missing server icons in Thunar for Samba shares.
 [ ] xscreensaver missing from package list and tagfiles.
+
 
 MLED 14.0
 ---------
