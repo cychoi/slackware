@@ -1,3 +1,9 @@
+Wed Jan  1 11:36:03 CET 2014
+xap/transmission-2.60-i486-1_microlinux.txz: Downgraded.
+	Transmission's GTK3 client keeps forgetting its preferences. Until this gets
+	sorted out, we're reverting to 2.60, the last know version to build the GTK2
+	client (--with-gtk=2), which isn't affected by this bug. 
++--------------------------+
 Mon Dec 30 14:27:32 CET 2013
 Microlinux Enterprise Desktop 14.1 32-bit released! This is an LTS release,
 which means packages will be maintained for as long as the underlying Slackware

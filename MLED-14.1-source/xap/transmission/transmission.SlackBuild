@@ -28,8 +28,8 @@
 # Modified by Niki Kovacs <info@microlinux.fr>
 
 PRGNAM=transmission
-VERSION=${VERSION:-2.77}
-BUILD=${BUILD:-2}
+VERSION=${VERSION:-2.60}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_microlinux}
 
 NUMJOBS=${NUMJOBS:--j5}
@@ -97,6 +97,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --disable-static \
   --verbose \
+  --with-gtk=2 \
   --build=$ARCH-slackware-linux \
   --host=$ARCH-slackware-linux
 
