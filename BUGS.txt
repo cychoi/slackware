@@ -8,6 +8,7 @@ Here's a list of known problems and bugs in MLED and MLES.
 ----
 
 [ ] Missing server icons in Thunar for Samba shares.
+[ ] xscreensaver missing from package list and tagfiles.
 
 14.0
 ----
