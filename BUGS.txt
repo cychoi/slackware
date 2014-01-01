@@ -1,16 +1,16 @@
-====
-BUGS 
-====
+===================
+BUGS & KNOWN ISSUES
+===================
 
 Here's a list of known problems and bugs in MLED and MLES.
 
-14.1
-----
+MLED 14.1
+---------
 
 [ ] Missing server icons in Thunar for Samba shares.
 [ ] xscreensaver missing from package list and tagfiles.
 
-14.0
-----
+MLED 14.0
+---------
 
 [ ] MuPDF Firefox plugin doesn't work.
