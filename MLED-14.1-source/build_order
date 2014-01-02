@@ -62,6 +62,7 @@ l/libisoburn
 l/gsl
 l/BeautifulSoup
 l/lxml
+l/podofo
 l/pysetuptools
 l/protobuf
 l/pyxdg
@@ -189,7 +190,7 @@ xap/conky
 xap/dvdrip
 xap/easytag
 gnome/evince
-xap/filezilla
+xap/filezilla 
 xap/galculator
 xap/gcolor2
 gnome/gnote
@@ -201,6 +202,7 @@ xap/mupdf
 xap/openoffice
 xap/openshot
 xap/poedit
+xap/scribus
 xap/simple-scan
 xap/smplayer
 xap/transmission
