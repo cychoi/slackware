@@ -1,3 +1,7 @@
+Thu Jan  2 15:32:04 CET 2014
+l/podofo-0.9.2-x86_64-1_microlinux.txz: Added.
+xap/scribus-1.4.3-x86_64-1_microlinux.txz: Added.
++--------------------------+
 Wed Jan  1 11:36:03 CET 2014
 xap/transmission-2.60-x86_64-1_microlinux.txz: Downgraded.
 	Transmission's GTK3 client keeps forgetting its preferences. Until this gets
