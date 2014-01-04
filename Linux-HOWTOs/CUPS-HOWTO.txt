@@ -36,33 +36,52 @@ Configuration du serveur
 
 Le fichier de configuration principal de CUPS, c'est '/etc/cups/cupsd.conf'.
 Nous allons éditer ce fichier pour partager une imprimante locale avec toutes
-les machines du réseau local :
+les machines du réseau local 192.168.2.0/24 :
 
 --8<---------- /etc/cups/cupsd.conf ------------------------------------------
-# /etc/cups/cupsd.conf
+...
 
-LogLevel info
-
+# Listen localhost:631 --> commenter et remplacer par l'option ci-dessous
 Port 631
+Listen /var/run/cups/cups.sock
 
+# Show shared printers on the local network.
+Browsing On
 BrowseAddress @LOCAL
+BrowseOrder allow,deny
 BrowseAllow 192.168.2.*
+BrowseLocalProtocols CUPS
 
+# Default authentication type, when authentication is required...
+DefaultAuthType Basic
+
+# Web interface setting...
+WebInterface Yes
+
+# Restrict access to the server...
 <Location />
-  Order Deny,Allow
-  Deny From All
+  Order allow,deny
   Allow From 127.0.0.1
   Allow From 192.168.2.*
 </Location>
 
+# Restrict access to the admin pages...
 <Location /admin>
-  AuthType Basic
-  AuthClass System
-  Order Deny,Allow
-  Deny From All
+  Order allow,deny
   Allow From 127.0.0.1
   Allow From 192.168.2.*
 </Location>
+
+# Restrict access to configuration files...
+<Location /admin/conf>
+  AuthType Default
+  Require user @SYSTEM
+  Order allow,deny
+  Allow From 127.0.0.1
+  Allow From 192.168.2.*
+</Location>
+
+...
 --8<--------------------------------------------------------------------------
 
   > 'Port 631' signifie que CUPS communique via le port réseau 631. 
