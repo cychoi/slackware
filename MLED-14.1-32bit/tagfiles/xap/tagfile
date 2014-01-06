@@ -14,6 +14,7 @@ pidgin:ADD
 sane:ADD
 windowmaker:ADD
 xine-lib:ADD
+xscreensaver:ADD
 
 # Skip
 blackbox:SKP
@@ -44,5 +45,4 @@ xmms:SKP
 xpaint:SKP
 xpdf:SKP
 xsane:SKP
-xscreensaver:SKP
 xv:SKP
