@@ -19,5 +19,6 @@ cat $TEMPFILE \
   | grep -v openoffice-langpack \
   | grep -v filezilla \
   | grep -v virtualbox \
+  | grep -v broadcom-sta \
   > $CWD/pkglists/packages-MLED
 
