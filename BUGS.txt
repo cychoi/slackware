@@ -14,7 +14,7 @@ MLED 14.1
 ---------
 
 [ ] Missing server icons in Thunar for Samba shares.
-[ ] xscreensaver missing from package list and tagfiles.
+[X] xscreensaver missing from package list and tagfiles.
 [X] Transmission doesn't keep its settings. 
 
 
