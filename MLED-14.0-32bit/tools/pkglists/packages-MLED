@@ -61,6 +61,7 @@ libevent
 libisoburn
 libisofs
 lxml
+podofo
 protobuf
 pysetuptools
 pyxdg
@@ -165,6 +166,8 @@ dvdrip
 easytag
 galculator
 gcolor2
+geany
+geany-plugins
 gtkcdlabel
 inkscape
 leafpad
@@ -173,9 +176,11 @@ mupdf
 openoffice
 openshot
 poedit
+scribus
 simple-scan
 smplayer
 transmission
+winff
 
 # xfce
 aero
