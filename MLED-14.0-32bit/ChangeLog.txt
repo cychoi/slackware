@@ -1,3 +1,12 @@
+Tue Jan 21 10:18:04 CET 2014
+xap/winff-1.5.2-i486-1_microlinux.txz: Added.
+	WinFF doesn't have any particular runtime dependencies except ffmpeg, but
+	it's written in Free Pascal, so you'll need a Free Pascal Compiler on your
+	machine. Make sure to install packages fpc, fpc-source and lazarus before
+	launching the build. They're all available on SlackBuilds.org.
+xap/geany-1.23.1-i486-1_microlinux.txz: Added.
+xap/geany-plugins-1.23-i486-1_microlinux.txz: Added.
++--------------------------+
 Tue Dec 31 13:42:06 CET 2013
 locale/mozilla-thunderbird-l10n-17.0.11-i486-1_microlinux.txz: Upgraded.
 +--------------------------+
