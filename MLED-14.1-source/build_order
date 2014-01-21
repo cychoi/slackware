@@ -193,6 +193,8 @@ gnome/evince
 xap/filezilla 
 xap/galculator
 xap/gcolor2
+xap/geany
+xap/geany-plugins
 gnome/gnote
 gnome/gthumb
 xap/gtkcdlabel
@@ -209,6 +211,8 @@ xap/transmission
 xap/virtualbox
 xap/virtualbox-kernel
 xap/virtualbox-extension-pack
+# External build dependencies for winff: fpc, fpc-source and lazarus
+xap/winff
 
 ################
 # Translations #
