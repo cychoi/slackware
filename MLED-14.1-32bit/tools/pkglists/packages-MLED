@@ -166,6 +166,8 @@ dvdrip
 easytag
 galculator
 gcolor2
+geany
+geany-plugins
 gtkcdlabel
 inkscape
 leafpad
@@ -178,6 +180,7 @@ scribus
 simple-scan
 smplayer
 transmission
+winff
 
 # xfce
 aero
