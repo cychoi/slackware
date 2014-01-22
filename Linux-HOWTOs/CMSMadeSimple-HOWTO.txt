@@ -239,7 +239,9 @@ Procéder de même pour le gabarit des News :
 
 Sauvegarder le gabarit par défaut 'Sample' vers une copie 'SampleOrig'.
 
-Et de même pour la feuille de style.
+Et de même pour la feuille de style :
+
+  Disposition > Feuilles de style > Layout: NCleanBlue
 
 
 Rendre le site plus lisible
