@@ -1,0 +1,12 @@
+        |-----handy-ruler------------------------------------------------------|
+openldap: openldap (OpenLDAP client programs)
+openldap:
+openldap: OpenLDAP is an open source implementation of the Lightweight
+openldap: Directory Access Protocol.  LDAP is a alternative to the X.500
+openldap: Directory Access Protocol (DAP). It uses the TCP/IP stack versus
+openldap: the overly complex OSI stack.
+openldap:
+openldap: LDAP is often used to provide authentication (such as for email).
+openldap:
+openldap: 
+openldap: Package created by Niki Kovacs <info@microlinux.fr>
