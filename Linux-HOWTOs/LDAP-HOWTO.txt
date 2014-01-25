@@ -2,7 +2,7 @@
 LDAP HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ==========
 
-Dernière révision : 24 janvier 2014
+Dernière révision : 25 janvier 2014
 
   *** WORK IN PROGRESS ***
 
@@ -35,6 +35,8 @@ loglevel        256
 sizelimit       unlimited
 --8<--------------------------------------------------------------------------
 
+Éditer '/etc/openldap/acl.conf' :
+
 --8<---------- /etc/openldap/acl.conf ----------------------------------------
 access to attrs=userPassword
   by self write
@@ -44,6 +46,45 @@ access to dn.base=""
 access to * by self write
   by * read
 --8<--------------------------------------------------------------------------
+
+# mkdir -p /var/lib/ldap/example.com
+# cp /var/lib/openldap-data/DB_CONFIG.example \
+  /var/lib/ldap/example.com/DB_CONFIG
+# mkdir /var/run/slapd
+
+Générer un mot de passe :
+
+  # slappasswd
+  New password:
+  Re-enter new password:
+  {SSHA}CBC4k64mVJuEcyylszFb/iS1I0HquCjF
+
+Coller la chaîne de caractères résultante dans 'slapd.conf'.
+
+Ajouter une ligne à '/etc/syslog.conf' :
+
+--8<---------- /etc/syslog.conf ----------------------------------------------
+...
+# LDAP
+local4.*    /var/log/ldap.log --> séparés par une TABULATION !!!
+--8<--------------------------------------------------------------------------
+
+  # touch /var/log/ldap.log
+  # chmod 644 /var/log/ldap.log
+  # /etc/rc.d/rc.syslog restart
+
+Démarrer 'slapd' à la main :
+
+  # /usr/libexec/slapd -h ldap://10.0.2.15:389
+
+Voir ce que ça donne :
+
+  # tail -f /var/log/ldap.log
+
+Voir si le processus tourne :
+
+  # pgrep -fl slapd
+
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
