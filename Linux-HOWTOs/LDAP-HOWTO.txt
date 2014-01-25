@@ -6,6 +6,13 @@ Dernière révision : 24 janvier 2014
 
   *** WORK IN PROGRESS ***
 
+Remplacer le paquet 'openldap-client' par le paquet recompilé 'openldap'.
+
+  # cd /etc/openldap
+  # mv slapd.conf slapd.conf.orig
+
+Éditer '/etc/openldap/slapd.conf' :
+
 --8<---------- /etc/openldap/slapd.conf --------------------------------------
 # SCHEMES
 include         /etc/openldap/schema/core.schema
