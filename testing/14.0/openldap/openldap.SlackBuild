@@ -99,7 +99,7 @@ CFLAGS="$SLKCFLAGS" \
 
 make depend || exit 1
 make $NUMJOBS || exit 1
-# make test || exit 1
+# make test || exit 1 --> takes more than 40 minutes on my quad-core
 make install DESTDIR=$PKG || exit 1
 
 # Fix permissions on shared libraries:
@@ -161,5 +161,5 @@ cd $PKG
 makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.txz
 
 # Cleanup
-# cd $TMP
-# rm -rf $PRGNAM-$VERSION $PKG
+cd $TMP
+rm -rf $PRGNAM-$VERSION $PKG

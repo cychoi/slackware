@@ -22,7 +22,7 @@ pidfile         /var/run/slapd/slapd.pid
 argsfile        /var/run/slapd/slapd.args
 suffix          "dc=example,dc=com"
 rootdn          "cn=ldapadmin,dc=example,dc=com"
-rootpw          {SSHA}MWyKewM8KHu22/4SdiYYuyXEoAjrZEoQ
+rootpw          {SSHA}CBC4k64mVJuEcyylszFb/iS1I0HquCjF
 password-hash   {CRYPT}
 loglevel        256
 sizelimit       unlimited
