@@ -45,6 +45,52 @@ access to * by self write
   by * read
 --8<--------------------------------------------------------------------------
 
+Script de démarrage :
+
+--8<---------- /etc/rc.d/rc.slapd --------------------------------------------
+#!/bin/bash
+bin="/usr/libexec/slapd"
+host="10.0.2.15"
+port="389"
+pid_file="/var/run/slapd/slapd.pid"
+
+function boot_slapd {
+  echo "Starting slapd: $bin"
+  $bin -h "ldap://127.0.0.1:389"
+}
+
+function start_slapd {
+  echo "Starting slapd: $bin"
+  $bin -h "ldap://127.0.0.1:389 ldap://${host}:${port}"
+}
+
+function stop_slapd {
+  if [[ -f $pid_file ]]; then
+    kill -15 `cat $pid_file`
+    sleep 2
+  fi
+}
+
+case "$1" in
+  'boot')
+    boot_slapd
+    ;;
+  'start')
+    start_slapd
+    ;;
+  'stop')
+    stop_slapd
+    ;;
+  'restart')
+    stop_slapd
+    start_slapd
+    ;;
+  *)
+    echo "usage $0 start|stop|restart|boot"
+    ;;
+esac
+--8<--------------------------------------------------------------------------
+
 ------------------------------------------------------------------------------
 # vim: syntax=txt
 # vim: set encoding=latin1
