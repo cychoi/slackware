@@ -135,6 +135,49 @@ esac
   # /etc/rc.d/rc.slapd start|stop|restart
 
 
+--8<---------- basic_dit.ldif ------------------------------------------------
+dn: dc=example,dc=com
+o: example
+dc: example
+objectClass: dcObject
+objectClass: organization
+
+dn: ou=groups,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+
+dn: cn=users,ou=groups,dc=example,dc=com
+objectClass: top
+objectClass: posixGroup
+gidNumber: 100
+cn: users
+
+dn: ou=users,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: uid=sneill,ou=users,dc=example,dc=com
+cn: Sam Neill
+sn: Neill
+givenName: Sam
+uid: sneill
+uidNumber: 1000
+gidNumber: 100
+homeDirectory: /home/sneill
+loginShell: /bin/bash
+gecos: Normal User
+mail: sam.neill@example.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:
+--8<--------------------------------------------------------------------------
+
 ------------------------------------------------------------------------------
 # vim: syntax=txt
 # vim: set encoding=latin1
