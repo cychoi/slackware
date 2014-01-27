@@ -1,0 +1,12 @@
+        |-----handy-ruler------------------------------------------------------|
+pam_ldap: pam_ldap (pam_ldap module)
+pam_ldap:
+pam_ldap: The pam_ldap module provides the means for Solaris and Linux servers
+pam_ldap: and workstations to authenticate against LDAP directories, and to
+pam_ldap: change their passwords in the directory.
+pam_ldap: 
+pam_ldap: 
+pam_ldap:
+pam_ldap: 
+pam_ldap: 
+pam_ldap: Package created by Niki Kovacs <info@microlinux.fr>
