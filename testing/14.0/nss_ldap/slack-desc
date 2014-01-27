@@ -1,0 +1,12 @@
+        |-----handy-ruler------------------------------------------------------|
+nss_ldap: nss_ldap (reference implementation of RFC 2307)
+nss_ldap:
+nss_ldap: The nss_ldap module provides the means for Solaris and Linux
+nss_ldap: workstations to user, host, group, etc., information from LDAP
+nss_ldap: diretories.  The module is the reference implementation of RFC 2307,
+nss_ldap: and has been studied by vendors such as Sun (who developed the
+nss_ldap: original Name Service Switch interface).
+nss_ldap:
+nss_ldap: 
+nss_ldap:
+nss_ldap: Package created by Niki Kovacs <info@microlinux.fr>
