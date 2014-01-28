@@ -384,10 +384,12 @@ USEBL=1
 WGETOPTS="--timeout=5 --tries=1"
 GREYLIST=on
 PKGS_PRIORITY=( microlinux:.* )
-REPOPLUS=( slackpkgplus restricted alienbob slacky )
+REPOPLUS=( microlinux slackpkgplus )
 MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLES-14.0-64bit/
 MIRRORPLUS['slackpkgplus']=http://slakfinder.org/slackpkg+/
 --8<--------------------------------------------------------------------------
+
+Élaguer le système de base, puis lancer la mise à jour initiale.
 
 
 Peaufiner la configuration du réseau
