@@ -77,7 +77,7 @@ local4.*    /var/log/ldap.log --> séparés par une TABULATION !!!
 
 Démarrer 'slapd' à la main :
 
-  # /usr/libexec/slapd -h ldap://10.0.2.15:389
+  # /usr/libexec/slapd -h ldap://192.168.2.5:389
 
 Voir ce que ça donne :
 
