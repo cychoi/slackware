@@ -2,7 +2,7 @@
 LAN Server HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ================
 
-Dernière révision : 8 janvier 2013
+Dernière révision : 28 janvier 2014
 
 Ce HOWTO décrit l'installation d'un serveur de réseau local sous Slackware.
 
@@ -348,7 +348,7 @@ Tester la connexion à Internet :
 
   # ping -c 3 www.google.fr
 
-Éventuellement, utiliser Lynx pour télécharger et installer le paquet
+Éventuellement, utiliser Links pour télécharger et installer le paquet
 'user-settings-console' sur le dépôt de Microlinux.
 
 Si l'on n'a pas accès au réseau au premier redémarrage, on peut éventuellement
@@ -364,13 +364,30 @@ Récupérer mes scripts et mes fichiers de configuration :
   # cd 
   # git clone https://github.com/kikinovak/slackware
 
-  /!\ Au cas où l'on obtiendrait une erreur SSL, réessayer avec le simple
-  protocole HTTP.
+Configurer slackpkg
+-------------------
 
-Construire et installer les paquets supplémentaires :
+Télécharger et installer le plug-in slackpkg+ pour slackpkg :
 
-  # cd server/14.0
-  # ./MLES.SlackBuild
+  # links http://slakfinder.org/slackpkg+
+
+Éditer '/etc/slackpkg/mirrors' et sélectionner un miroir de téléchargement.
+
+Éditer '/etc/slackpkg/slackpkgplus.conf'. Sur Slackware64 :
+
+--8<---------- /etc/slackpkg/slackpkgplus.conf -------------------------------
+# /etc/slackpkg/slackpkgplus.conf
+SLACKPKGPLUS=on
+VERBOSE=1
+ALLOW32BIT=off
+USEBL=1
+WGETOPTS="--timeout=5 --tries=1"
+GREYLIST=on
+PKGS_PRIORITY=( microlinux:.* )
+REPOPLUS=( slackpkgplus restricted alienbob slacky )
+MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLES-14.0-64bit/
+MIRRORPLUS['slackpkgplus']=http://slakfinder.org/slackpkg+/
+--8<--------------------------------------------------------------------------
 
 
 Peaufiner la configuration du réseau
