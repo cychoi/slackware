@@ -1,9 +1,9 @@
-Wed Dec 25 15:33:45 CET 2013
-Microlinux Enterprise Server 14.0 64-bit released! This is an LTS release,
-which means packages will be maintained for as long as the underlying Slackware
-system is officially supported.
+Sat Feb  8 12:41:52 CET 2014
+Here's the first batch of packages for MLES 14.1 64-bit. This is an LTS
+release, which means packages will be maintained for as long as the underlying
+Slackware system is officially supported.
 
-MLES 14.0 64-bit provides the following extra software:
+So far, MLES 14.1 64-bit provides the following extra software:
 
 AP
 |-- p7zip
@@ -42,9 +42,6 @@ MULTIMEDIA
 
 N
 |-- dovecot
-|-- icecast
-|-- mpd
-|-- ncmpc
 |-- postfix
 |-- postgrey
 |-- rtorrent
