@@ -47,6 +47,7 @@ Options de démarrage :
   * 'huge.s'    -> 64bit
   * 'hugesmp.s' -> 32bit
   * 'vga=788'   -> affichage 800x600
+  * 'vga=791'   -> affichage 1024x768
 
 Choix du clavier : 'azerty/fr-latin1.map' pour un clavier AZERTY français.
 
@@ -97,10 +98,10 @@ Partitionner les disques :
 Schéma de partitionnement :
 
   * un disque RAID pour '/boot', de 100 Mo, formaté en ext2
-  * un disque RAID pour la partition swap, de 1 Go
+  * un disque RAID pour la partition swap, équivalent à la RAM disponible
   * un disque RAID pour '/', formaté en ext4
 
-  > Les partitions RAID sont de type DA ('Non-FS data').
+  > Les partitions RAID sont de type FD ('Linux raid autodetect').
 
 Deux disques en RAID 1 :
 
@@ -178,8 +179,7 @@ console (the safe choice).
     (prochain écran), on peut très bien ne rien mettre et peaufiner le tout en
     éditant '/etc/lilo.conf' plus tard.
 
-OPTIONAL LILO append="<kernel parameters>" LINE : ne rien indiquer pour
-l'instant, voir la précédente remarque.
+OPTIONAL LILO append="<kernel parameters>" LINE : 'quiet ipv6.disable=1'
 
 USE UTF-8 TEXT CONSOLE : 'Yes' - UTF8 a beau avoir quelques petits problèmes
 avec certains utilitaires en mode console, notamment avec des pages man en
@@ -255,10 +255,9 @@ Sortir de l'installateur ('EXIT') et effectuer quelques retouches finales :
 Construire l'initrd et configurer LILO
 --------------------------------------
 
-Supprimer les liens symboliques dans '/boot' :
+Créer le fichier de configuration pour la grappe RAID :
 
-  # cd /boot
-  # rm -f System.map config vmlinuz
+  # mdadm -E -s > /etc/mdadm.conf
 
 Préparer l'initrd :
 
@@ -311,10 +310,10 @@ raid-extra-boot = mbr-only
 ...
 timeout = 30
 ...
-image = /boot/vmlinuz-generic-3.2.29
+image = /boot/vmlinuz-generic-3.10.17
   initrd = /boot/initrd.gz
   root = /dev/md3
-  label = 14.0-64bit
+  label = MLES-14.1-64bit
   read-only
 --8<--------------------------------------------------------------------------
 
@@ -333,6 +332,11 @@ pas sur le premier disque" :o)
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   # watch cat /proc/mdstat
+
+Dans certains cas, l'astuce suivante permet d'accélérer la synchronisation de
+la grappe RAID de façon significative :
+
+  # echo 50000 > /proc/sys/dev/raid/speed_limit_min
 
 Aller boire un ou plusieurs cafés, jouer avec le chat, faire un tour dans la
 garrigue, etc.
