@@ -179,7 +179,7 @@ exit 0
 
 Rendre le script exécutable :
 
-  # chmod 0755 /etc/rc.d/rc.dhcpd
+  # chmod +x /etc/rc.d/rc.dhcpd
 
 Définir le lancement automatique du serveur au démarrage :
 
@@ -202,7 +202,7 @@ if [ -x /etc/rc.d/rc.dhcpd ]; then
 fi
 --8<--------------------------------------------------------------------------
 
-  # chmod 0755 /etc/rc.d/rc.local_shutdown
+  # chmod +x /etc/rc.d/rc.local_shutdown
 
 
 ------------------------------------------------------------------------------
