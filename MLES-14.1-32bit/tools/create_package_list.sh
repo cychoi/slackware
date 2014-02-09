@@ -17,5 +17,5 @@ for PKGGROUP in ap d l multimedia n profile ; do
 done
 cat $TEMPFILE \
   | grep -v do_not_add_this_package \
-  > $CWD/pkglists/packages-MLED
+  > $CWD/pkglists/packages-MLES
 
