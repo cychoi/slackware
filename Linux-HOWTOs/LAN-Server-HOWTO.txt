@@ -353,7 +353,9 @@ Tester la connexion à Internet :
   # ping -c 3 www.google.fr
 
 Éventuellement, utiliser Links pour télécharger et installer le paquet
-'user-settings-console' sur le dépôt de Microlinux.
+'user-settings-console' sur le dépôt de Microlinux :
+
+  # links http://www.microlinux.fr/slackware
 
 Si l'on n'a pas accès au réseau au premier redémarrage, on peut éventuellement
 permuter l'affectation des interfaces réseau 'eth0' et 'eth1', en éditant
@@ -368,6 +370,7 @@ Récupérer mes scripts et mes fichiers de configuration :
   # cd 
   # git clone https://github.com/kikinovak/slackware
 
+
 Configurer slackpkg
 -------------------
 
@@ -375,7 +378,14 @@ Télécharger et installer le plug-in slackpkg+ pour slackpkg :
 
   # links http://slakfinder.org/slackpkg+
 
-Éditer '/etc/slackpkg/mirrors' et sélectionner un miroir de téléchargement.
+Sélectionner un miroir de téléchargement, par exemple :
+
+--8<---------- /etc/slackpkg/mirrors -----------------------------------------
+...
+# GERMANY (DE)
+ftp://ftp.fu-berlin.de/unix/linux/slackware/slackware64-14.1/
+...
+--8<--------------------------------------------------------------------------
 
 Éditer '/etc/slackpkg/slackpkgplus.conf'. Sur Slackware64 :
 
@@ -393,7 +403,19 @@ MIRRORPLUS['microlinux']=http://www.microlinux.fr/slackware/MLES-14.0-64bit/
 MIRRORPLUS['slackpkgplus']=http://slakfinder.org/slackpkg+/
 --8<--------------------------------------------------------------------------
 
-Élaguer le système de base, puis lancer la mise à jour initiale.
+Mettre à jour les clés GPG et les infos sur les paquets disponibles :
+
+  # slackpkg update gpg
+  # slackpkg update
+
+Élaguer le système de base :
+
+  # cd tools
+  # ./trim_server_base.sh
+
+Lancer la mise à jour initiale :
+
+  # slackpkg upgrade-all
 
 
 Peaufiner la configuration du réseau
