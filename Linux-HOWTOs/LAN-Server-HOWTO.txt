@@ -417,6 +417,10 @@ Lancer la mise à jour initiale :
 
   # slackpkg upgrade-all
 
+Installer la collection de paquets MLES :
+
+  # ./install_MLES.sh
+
 
 Peaufiner la configuration du réseau
 ------------------------------------
