@@ -451,28 +451,17 @@ Corriger la configuration de l'installateur dans '/etc/hosts'. Par exemple :
 Activer le relais des paquets
 -----------------------------
 
-Pour activer le relais des paquets ("packet forwarding"), il faut d'abord
-ajouter une ligne à '/etc/rc.d/rc.ip_forward' :
-
---8<---------- /etc/rc.d/rc.ip_forward ---------------------------------------
-  ...
-  echo "Activating IPv4 packet forwarding."
-  echo 1 > /proc/sys/net/ipv4/ip_forward
-  /usr/sbin/iptables -t nat -A POSTROUTING -o eth0 -s 192.168.2.0/24 -j MASQUERADE
-  ...
---8<--------------------------------------------------------------------------
-
-  > '-o eth0' désigne l'interface réseau côté Internet.
-
-  > '-s 192.168.2.0/24' est le réseau local.
-
-Pour utiliser le tout :
+Pour activer le relais des paquets ("packet forwarding"), il faut utiliser le
+script '/etc/rc.d/rc.ip_forward' :
 
   # chmod 0755 /etc/rc.d/rc.ip_forward
   # /etc/rc.d/rc.ip_forward {start|stop|restart}
 
-  > Il suffit de rendre le script exécutable pour qu'il se lance au démarrage
-    de la machine.
+Il suffit de rendre le script exécutable pour qu'il se lance au démarrage de
+la machine.
+
+  /!\ Le relais des paquets est activé, mais pas encore défini. Pour ce faire,
+  il faudra ajouter une règle spécifique au script du pare-feu.
 
 
 Sécuriser le serveur
@@ -481,19 +470,13 @@ Sécuriser le serveur
 Dans un premier temps, configurer les encapsuleurs TCP. Voir le
 TCP-Wrapper-HOWTO.
 
-Ensuite, activer le pare-feu. Copier le script 'rc.firewall.lan' à l'endroit
-approprié et l'activer :
+Ensuite, activer le pare-feu. Copier le script 'rc.firewall.lan-server' à
+l'endroit approprié et l'activer :
 
-  # cp rc.firewall.lan /etc/rc.d/rc.firewall
+  # cp rc.firewall.lan-server /etc/rc.d/rc.firewall
   # chmod 0755 /etc/rc.d/rc.firewall
   # /etc/rc.d/rc.firewall start
   
-  > Attention, un redémarrage manuel du pare-feu désactive le relais des
-    paquets. Il faudra donc toujours utiliser les deux de concert, comme ceci: 
-
-  # /etc/rc.d/rc.firewall restart
-  # /etc/rc.d/rc.ip_forward restart
-
 
 Installer les services
 ----------------------
