@@ -135,6 +135,13 @@ multimedia/gst-plugins-bad
 multimedia/gst-plugins-ugly
 multimedia/libmpeg2
 multimedia/transcode
+# Post-release
+multimedia/gstreamer1
+multimedia/gst1-plugins-base
+multimedia/gst1-plugins-good
+multimedia/gst1-plugins-bad
+multimedia/gst1-plugins-ugly
+multimedia/gst1-libav
 
 #########
 # Fonts #
@@ -225,3 +232,4 @@ locale/mozilla-thunderbird-l10n
 # Desktop configuration #
 #########################
 profile/user-settings-xfce
+
