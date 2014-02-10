@@ -6,6 +6,7 @@ multimedia/gst1-plugins-base-1.2.2-i486-1_microlinux.tgz: Added.
 multimedia/gst1-plugins-good-1.2.2-i486-1_microlinux.txz: Added.
 multimedia/gst1-plugins-bad-1.2.2-i486-1_microlinux.txz: Added.
 multimedia/gst1-plugins-ugly-1.2.2-i486-1_microlinux.txz: Added.
+multimedia/gst1-libav-1.2.2-i486-1_microlinux.txz: Added.
 	This batch of updated gstreamer-1.x packages are installed alongside the
 	stock gstreamer and gst-plugins-* packages included with Slackware.
 gnome/brasero-3.11.3-i486-1_microlinux.txz: Upgraded.
