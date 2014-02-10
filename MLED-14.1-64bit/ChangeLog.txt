@@ -1,6 +1,15 @@
 Mon Feb 10 08:22:59 CET 2014
 locale/mozilla-firefox-l10n-24.3.0-x86_64-1_microlinux.txz: Upgraded.
 locale/mozilla-thunderbird-l10n-24.3.0-x86_64-1_microlinux.txz: Upgraded.
+multimedia/gstreamer1-1.2.2-x86_64-1_microlinux.txz: Added.
+multimedia/gst1-plugins-base-1.2.2-x86_64-1_microlinux.txz: Added.
+multimedia/gst1-plugins-good-1.2.2-x86_64-1_microlinux.txz: Added.
+multimedia/gst1-plugins-bad-1.2.2-x86_64-1_microlinux.txz: Added.
+multimedia/gst1-plugins-ugly-1.2.2-x86_64-1_microlinux.txz: Added.
+multimedia/gst1-libav-1.2.2-x86_64-1_microlinux.txz: Added.
+	This batch of updated gstreamer-1.x packages are installed alongside the
+	stock gstreamer and gst-plugins-* packages included with Slackware.
+gnome/brasero-3.11.3-x86_64-1_microlinux.txz: Upgraded.
 +--------------------------+
 Tue Jan 21 10:18:04 CET 2014
 xap/winff-1.5.2-x86_64-1_microlinux.txz: Added.
