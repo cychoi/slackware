@@ -1,3 +1,7 @@
+Mon Feb 10 08:22:59 CET 2014
+locale/mozilla-firefox-l10n-24.3.0-x86_64-1_microlinux.txz: Upgraded.
+locale/mozilla-thunderbird-l10n-24.3.0-x86_64-1_microlinux.txz: Upgraded.
++--------------------------+
 Tue Jan 21 10:18:04 CET 2014
 xap/winff-1.5.2-x86_64-1_microlinux.txz: Added.
 	WinFF doesn't have any particular runtime dependencies except ffmpeg, but
