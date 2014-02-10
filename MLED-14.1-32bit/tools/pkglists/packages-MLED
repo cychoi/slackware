@@ -80,9 +80,15 @@ ffmpeg
 flashplayer-plugin
 frei0r
 gsm
+gst1-libav
+gst1-plugins-bad
+gst1-plugins-base
+gst1-plugins-good
+gst1-plugins-ugly
 gst-ffmpeg
 gst-plugins-bad
 gst-plugins-ugly
+gstreamer1
 id3lib
 ladspa_sdk
 lame
