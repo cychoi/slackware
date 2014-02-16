@@ -4,6 +4,15 @@ Facebook Filter HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 
 Dernière révision : 16 février 2014
 
+  * Problématique
+  * Identifier les IP de Facebook
+  * Intégrer les IP dans le pare-feu
+  * Bloquer Facebook pendant les heures de travail
+
+
+Problématique
+-------------
+
 J'utilise une combinaison de Squid et SquidGuard pour configurer un filtrage
 Internet pour les écoles, les médiathèques et les entreprises. La solution
 fonctionne très bien, à la seule exception de Facebook.
@@ -16,6 +25,10 @@ fallait donc trouver une autre solution.
 En règle générale, les entreprises aussi bien que les écoles souhaitent un
 blocage total des réseaux sociaux, pour des raisons plus ou moins évidentes.
 Dans ce cas, on peut songer à configurer le blocage au niveau du pare-feu.
+
+
+Identifier les IP de Facebook
+-----------------------------
 
 Bloquer une ou plusieurs adresses IP avec iptables, rien de plus simple. Le
 souci, c'est que Facebook est un géant qui dispose d'une quantité
@@ -92,6 +105,10 @@ Débarrassons-nous des deux entrées initiales :
   31.13.69.0/24
   ...
 
+
+Intégrer les IP dans le pare-feu
+--------------------------------
+
 À présent, nous pouvons intégrer ce résultat dans un script :
 
 --8<---------- /usr/local/sbin/facebook-block.sh -----------------------------
@@ -123,6 +140,34 @@ Toutes les connexions aux serveurs de Facebook sont désormais bloquées :
      0     0 DROP   tcp  --  *   *   31.13.65.0/24  0.0.0.0/0           
      0     0 DROP   tcp  --  *   *   31.13.66.0/24  0.0.0.0/0
   ...
+
+Éditer un deuxième script pour débloquer Facebook :
+
+--8<---------- /usr/local/sbin/facebook-allow.sh -----------------------------
+#!/bin/bash
+/etc/rc.d/rc.firewall restart
+/usr/bin/whois -h whois.radb.net '!gAS32934' | tr ' ' '\n' \
+  | sort -n -k1,1 -k2,2 -k3,3 -k4,4 | tail -n+3 > /tmp/fbips.txt
+FBIPS=$(egrep -v '(^\s+$)' /tmp/fbips.txt)
+for FBIP in $FBIPS; do
+  /usr/sbin/iptables -A FORWARD -p tcp -s $FBIP -j ACCEPT
+done
+--8<--------------------------------------------------------------------------
+
+
+Bloquer Facebook pendant les heures de travail
+----------------------------------------------
+
+À partir de là, on peut définir une série de cronjobs pour autoriser ou
+refuser l'accès à Facebook selon l'heure de la journée :
+
+  # crontab -e
+  ...
+  # Bloquer Facebook tous les matins à 8h45
+  45 08 * * * /usr/local/sbin/facebook-block.sh 1> /dev/null
+  # Débloquer Facebook tous les soirs à 17h00
+  00 17 * * * /usr/local/sbin/facebook-allow.sh 1> /dev/null
+
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
