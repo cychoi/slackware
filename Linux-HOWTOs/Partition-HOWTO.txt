@@ -109,11 +109,45 @@ choix entre MBR et GPT pour le partitionnement d'un disque neuf.
 
 La migration d'un disque MBR vers GPT et l'initialisation d'un disque vierge
 avec GPT doit donc s'effectuer à la main, en utilisant les outils en ligne de
-commande adaptés :
+commande adaptés.
 
-  # parted /dev/sda
-  (parted) mklabel gpt
-  (parted) quit
+Supprimer la table de partitions MBR :
+
+  # dd if=/dev/zero of=/dev/sda bs=512 count=64
+
+Lancer l'outil de partitionnement :
+
+  # gdisk /dev/sda
+
+Alternativement :
+
+  # cgdisk /dev/sda
+
+Une fois qu'on a créé la nouvelle table de partitions et qu'on a quitté
+'gdisk' ou 'cgdisk', on peut afficher le schéma de partitionnement en
+utilisant l'option '-l' :
+
+  # gdisk -l /dev/sda
+
+
+Revenir au partitionnement MBR
+------------------------------
+
+Pour utiliser un partitionnement classique avec 'fdisk' ou 'cfdisk' sur un
+disque GPT, il faut veiller à bien se débarrasser des tables de partitions
+correspondantes :
+
+  # gdisk /dev/sda
+
+  x - extra functionality (experts only)
+
+  z - zap (destroy) GPT data structures and exit
+
+  Blank out MBR? (Y/N)
+
+Vérifier si 'fdisk' ne détecte pas des résidus de table GPT :
+
+  # fdisk -l /dev/sda
 
 
 ------------------------------------------------------------------------------
