@@ -159,14 +159,15 @@ Bloquer Facebook pendant les heures de travail
 ----------------------------------------------
 
 À partir de là, on peut définir une série de cronjobs pour autoriser ou
-refuser l'accès à Facebook selon l'heure de la journée :
+refuser l'accès à Facebook selon l'heure de la journée. Dans l'exemple
+ci-dessous, on bloque Facebook du lundi au vendredi de 8h00 à 18h00 :
 
   # crontab -e
   ...
-  # Bloquer Facebook tous les matins à 8h45
-  45 08 * * * /usr/local/sbin/facebook-block.sh 1> /dev/null
-  # Débloquer Facebook tous les soirs à 17h00
-  00 17 * * * /usr/local/sbin/facebook-allow.sh 1> /dev/null
+  # Activer le blocage du lundi au vendredi à 8h00
+  00 8 * * 1-5 /usr/local/sbin/facebook-block.sh 1> /dev/null
+  # Désactiver le blocage le soir à 18h00
+  00 18 * * * /usr/local/sbin/facebook-allow.sh 1> /dev/null
 
 
 ------------------------------------------------------------------------------
