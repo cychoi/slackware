@@ -2,13 +2,23 @@
 Canon Printer HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
 ===================
 
-Dernière révision : 16 février 2014
+Dernière révision : 25 février 2014
 
-  * Problématique
-  * Identifier les IP de Facebook
-  * Intégrer les IP dans le pare-feu
-  * Bloquer Facebook pendant les heures de travail
+Ce HOWTO décrit la configuration d'une imprimante et/ou d'un scanner Canon
+sous Slackware Linux.
 
+
+Introduction
+------------
+
+Le fabricant Canon propose des drivers Linux pour ses imprimantes et ses
+scanners, ainsi qu'une application de numérisation "maison". L'installation de
+tous ces composants n'est pas évidente, étant donné que les seuls formats de
+paquets RPM et DEB sont officiellement supportés. 
+
+
+Récupérer les paquets
+---------------------
 
 Aller sur le site de Canon :
 
@@ -33,9 +43,9 @@ Les drivers et les applications sont disponibles en trois formats :
   2. Paquets DEB
   3. Fichiers source
 
-Les fichiers source sont spécifiques à la construction de paquets RPM. On va
-donc opter directement pour le format RPM. Télécharger les deux archives
-compressées respectives :
+Les fichiers source sont malheureusment spécifiques à la construction de
+paquets RPM. On va donc opter directement pour le format RPM binaire.
+Télécharger les deux archives compressées respectives :
 
   * MG2200 series IJ Printer Driver Ver. 3.80 for Linux (rpm Packagearchive)
   * MG2200 series ScanGear MP Ver. 2.00 for Linux (rpm Packagearchive)
@@ -133,6 +143,10 @@ Categories=Graphics;
 Rafraîchir les entrées de menu :
 
   # update-desktop-database
+
+À partir de là, l'imprimante peut être configurée comme n'importe quel modèle
+supporté dans l'interface de CUPS.
+
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
