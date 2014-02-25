@@ -113,7 +113,26 @@ pas présente sur un système Slackware par défaut :
 La bibliothèque en question est fournie par le paquet 'pangox-compat', que
 l'on peut trouver sur SlackBuilds.org.
 
+Éditer un fichier '/usr/share/desktop/scangearmp.desktop' pour créer une
+entrée de menu :
 
+--8<---------- scangearmp.desktop --------------------------------------------
+[Desktop Entry]
+Name=Scanner Tool
+Name[de]=Scannersoftware
+Name[fr]=Acquisition d'images
+Comment=Simple Scan
+Exec=scangearmp
+Icon=scanner
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Graphics;
+--8<--------------------------------------------------------------------------
+
+Rafraîchir les entrées de menu :
+
+  # update-desktop-database
 
 ------------------------------------------------------------------------------
 # vim: syntax=txt
