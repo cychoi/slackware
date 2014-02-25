@@ -8,6 +8,14 @@ Ce HOWTO décrit la configuration d'une imprimante et/ou d'un scanner Canon
 sous Slackware Linux.
 
 
+  * Introduction
+  * Récupérer les paquets
+  * Installer le driver de l'imprimante
+  * Installer l'application de numérisation
+  * Installer une bibliothèque manquante
+  * Éditer une entrée de menu pour l'application de numérisation
+  
+
 Introduction
 ------------
 
@@ -56,6 +64,10 @@ répertoire :
   * cnijfilter-mg2200series-3.80-1-rpm.tar.gz 
   * scangearmp-mg2200series-2.00-1-rpm.tar.gz
 
+
+Installer le driver de l'imprimante
+-----------------------------------
+
 Décompresser l'archive du driver :
   
   # tar xvzf cnijfilter-mg2200series-3.80-1-rpm.tar.gz
@@ -94,7 +106,11 @@ Installer ces paquets :
 
   # installpkg *.tgz
 
-Faire de même avec le paquet qui contient le logiciel de numérisation :
+
+Installer l'application de numérisation
+---------------------------------------
+
+Procéder de même pour le paquet qui contient le logiciel de numérisation :
 
   # tar xvzf scangearmp-mg2200series-2.00-1-rpm.tar.gz
   # cd scangearmp-mg2200series-2.00-1-rpm/packages/
@@ -114,6 +130,10 @@ Installer ces paquets :
 
   # installpkg *.tgz
 
+
+Installer une bibliothèque manquante
+------------------------------------
+
 L'application '/usr/local/bin/scangearmp' requiert une bibliothèque qui n'est
 pas présente sur un système Slackware par défaut :
 
@@ -122,6 +142,10 @@ pas présente sur un système Slackware par défaut :
 
 La bibliothèque en question est fournie par le paquet 'pangox-compat', que
 l'on peut trouver sur SlackBuilds.org.
+
+
+Éditer une entrée de menu pour l'application de numérisation
+------------------------------------------------------------
 
 Éditer un fichier '/usr/share/desktop/scangearmp.desktop' pour créer une
 entrée de menu :
