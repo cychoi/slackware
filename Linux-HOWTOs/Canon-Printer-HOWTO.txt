@@ -1,0 +1,120 @@
+===================
+Canon Printer HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+===================
+
+Dernière révision : 16 février 2014
+
+  * Problématique
+  * Identifier les IP de Facebook
+  * Intégrer les IP dans le pare-feu
+  * Bloquer Facebook pendant les heures de travail
+
+
+Aller sur le site de Canon :
+
+  * http://www.canon.fr
+
+Trouver la section de téléchargement des drivers :
+
+  * Support > Assistance > Imprimantes et multifonctions 
+
+Trouver les drivers, par exemple : 
+
+  * Pixma > MG2250 > Logiciel (Pilotes et applications)
+
+Choisir le système d'exploitation et la langue :
+
+  [X] Linux
+  [X] Français
+
+Les drivers et les applications sont disponibles en trois formats :
+
+  1. Paquets RPM
+  2. Paquets DEB
+  3. Fichiers source
+
+Les fichiers source sont spécifiques à la construction de paquets RPM. On va
+donc opter directement pour le format RPM. Télécharger les deux archives
+compressées respectives :
+
+  * MG2200 series IJ Printer Driver Ver. 3.80 for Linux (rpm Packagearchive)
+  * MG2200 series ScanGear MP Ver. 2.00 for Linux (rpm Packagearchive)
+
+Créer un répertoire '/root/canon/' et ranger les deux archives dans ce
+répertoire :
+
+  * cnijfilter-mg2200series-3.80-1-rpm.tar.gz 
+  * scangearmp-mg2200series-2.00-1-rpm.tar.gz
+
+Décompresser l'archive du driver :
+  
+  # tar xvzf cnijfilter-mg2200series-3.80-1-rpm.tar.gz
+
+Voici ce que l'on obtient :
+
+  # tree cnijfilter-mg2200series-3.80-1-rpm
+  cnijfilter-mg2200series-3.80-1-rpm
+  |-- install.sh
+  |-- packages
+  |   |-- cnijfilter-common-3.80-1.i386.rpm
+  |   |-- cnijfilter-common-3.80-1.x86_64.rpm
+  |   |-- cnijfilter-mg2200series-3.80-1.i386.rpm
+  |   `-- cnijfilter-mg2200series-3.80-1.x86_64.rpm
+  `-- resources
+      |-- printer_fr_utf8.lc
+      |-- printer_ja_utf8.lc
+      `-- printer_zh_utf8.lc
+
+Convertir les paquets RPM au format TGZ :
+
+  # cd cnijfilter-mg2200series-3.80-1-rpm/packages/
+  # rpm2tgz *.i386.rpm
+
+Sur un système 64-bits :
+
+  # rpm2tgz *.x86_64.rpm
+  
+Vérifier les paquets résultants :
+
+  # ls *.tgz
+  cnijfilter-common-3.80-1.i386.tgz  
+  cnijfilter-mg2200series-3.80-1.i386.tgz
+
+Installer ces paquets :
+
+  # installpkg *.tgz
+
+Faire de même avec le paquet qui contient le logiciel de numérisation :
+
+  # tar xvzf scangearmp-mg2200series-2.00-1-rpm.tar.gz
+  # cd scangearmp-mg2200series-2.00-1-rpm/packages/
+  # rpm2tgz *.i386.rpm
+
+Sur un système 64-bits :
+
+  # rpm2tgz *.x86_64.rpm
+
+Vérifier les paquets résultants :
+
+  # ls *.tgz
+  scangearmp-common-2.00-1.i386.tgz  
+  scangearmp-mg2200series-2.00-1.i386.tgz
+
+Installer ces paquets :
+
+  # installpkg *.tgz
+
+L'application '/usr/local/bin/scangearmp' requiert une bibliothèque qui n'est
+pas présente sur un système Slackware par défaut :
+
+  # ldd /usr/local/bin/scangearmp | grep "not found"
+    libpangox-1.0.so.0 => not found
+
+La bibliothèque en question est fournie par le paquet 'pangox-compat', que
+l'on peut trouver sur SlackBuilds.org.
+
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
+# vim: set encoding=latin1
