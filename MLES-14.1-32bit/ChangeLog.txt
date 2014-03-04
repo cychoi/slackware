@@ -1,3 +1,8 @@
+Tue Mar  4 11:43:01 CET 2014
+l/pysetuptools-2.1-i486-1_microlinux.txz: Added.
+l/psutil-1.2.1-i486-1_microlinux.txz: Added.
+ap/glances-1.7.2-i486-1_microlinux.txz: Added.
++--------------------------+
 Sat Feb  8 12:24:47 CET 2014
 Here's the first batch of packages for MLES 14.1 32-bit. This is an LTS
 release, which means packages will be maintained for as long as the underlying
