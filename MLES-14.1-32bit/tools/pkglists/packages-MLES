@@ -3,6 +3,7 @@
 #####################
 
 # ap
+glances
 p7zip
 pwgen
 recode
@@ -22,6 +23,8 @@ perl-Net-Server
 libmpdclient
 libsigc++
 libtorrent
+psutil
+pysetuptools
 
 # multimedia
 faac

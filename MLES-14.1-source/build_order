@@ -56,3 +56,9 @@ n/postfix
 n/dovecot
 n/postgrey
 
+##########################
+# Post-release additions #
+##########################
+l/pysetuptools
+l/psutil
+ap/glances
