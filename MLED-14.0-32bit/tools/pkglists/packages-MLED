@@ -135,6 +135,7 @@ xvidcore
 
 # n
 fping
+freerdp
 
 # profile
 user-settings-console
@@ -176,6 +177,7 @@ mupdf
 openoffice
 openshot
 poedit
+remmina
 scribus
 simple-scan
 smplayer

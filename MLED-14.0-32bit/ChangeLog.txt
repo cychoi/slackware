@@ -1,3 +1,7 @@
+Thu Mar  6 07:14:39 CET 2014
+n/freerdp-20131115_ea18d2b-i486-1_microlinux.txz: Added.
+xap/remmina-20131008_26b814a-i486-_microlinux.txz: Added.
++--------------------------+
 Tue Jan 21 10:18:04 CET 2014
 xap/winff-1.5.2-i486-1_microlinux.txz: Added.
 	WinFF doesn't have any particular runtime dependencies except ffmpeg, but

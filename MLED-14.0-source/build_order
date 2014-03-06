@@ -225,3 +225,10 @@ locale/mozilla-thunderbird-l10n
 # Desktop configuration #
 #########################
 profile/user-settings-xfce
+
+##########################
+# Post-release additions #
+##########################
+n/freerdp
+xap/remmina
+
