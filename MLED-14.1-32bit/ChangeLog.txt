@@ -1,3 +1,7 @@
+Thu Mar  6 06:58:31 CET 2014
+n/freerdp-20131115_ea18d2b-i486-1_microlinux.txz: Added.
+xap/remmina-20131008_26b814a-i486-_microlinux.txz: Added.
++--------------------------+
 Mon Feb 10 07:57:23 CET 2014
 locale/mozilla-firefox-l10n-24.3.0-i486-1_microlinux.txz: Upgraded.
 locale/mozilla-thunderbird-l10n-24.3.0-i486-1_microlinux.txz: Upgraded.
