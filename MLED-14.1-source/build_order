@@ -233,3 +233,9 @@ locale/mozilla-thunderbird-l10n
 #########################
 profile/user-settings-xfce
 
+##########################
+# Post-release additions #
+##########################
+n/freerdp
+xap/remmina
+
