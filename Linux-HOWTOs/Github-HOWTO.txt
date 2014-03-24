@@ -1,0 +1,138 @@
+============
+Github HOWTO (c) Nicolas Kovacs <info@microlinux.fr>
+============
+
+Dernière révision : 24 mars 2014
+
+Ce HOWTO décrit la création et la gestion d'un dépôt Github.
+
+Créer une base de dépôt local :
+
+  # cd
+  # mkdir slackware
+  # cd slackware
+  # touch README.txt
+
+Éditer le fichier README.txt
+
+--8<---------- README.txt ----------------------------------------------------
+Ma collection de scripts, de fichiers de configuration et de SlackBuilds pour
+la distribution Slackware.
+--8<--------------------------------------------------------------------------
+
+Créer un compte sur :
+
+  * github.com
+
+Choose your personal plan : Free
+
+Vérifer dans les mails et confirmer la validité du compte (important).
+
+Créer notre premier dépôt : New repository
+
+Choisir un nom pour ce dépôt :
+
+Owner      /    Repository name
+glagaffe   /    slackware
+
+Description (optional)
+
+Ma collection de scripts, de fichiers de configuration et de SlackBuilds pour
+la distribution Slackware.
+
+(X) Public
+
+[ ] Initialize this repository with a README.
+
+Create repository.
+
+Initialiser le dépôt local. À partir du répertoire créé plus haut :
+
+  # git init
+  # git add README.txt
+  # git commit -m "Commit initial"
+  # git config --global user.email "glagaffe@microlinux.fr"
+  # git config --global user.name "Gaston Lagaffe"
+  # git remote add origin https://github.com/glagaffe/slackware.git
+  # git push -u origin master
+
+Créer un répertoire slackbuilds. Télécharger un ou plusieurs SlackBuilds sur
+le site slackbuilds.org. Télécharger également le code source correspondant :
+
+Exemple :
+
+  # ls -l 
+  -rw-r--r-- 1 root root  1445348 mars  24 10:46 lame-3.99.5.tar.gz
+  -rw-r--r-- 1 1026 users     293 nov.  22 20:45 lame.info
+  -rwxr-xr-x 1 1026 users    3201 nov.  22 20:47 lame.SlackBuild
+  -rw-r--r-- 1 1026 users     199 août  20  2011 README
+  -rw-r--r-- 1 1026 users     784 nov.  22 20:47 slack-desc
+
+Pour éviter que Git prenne en compte l'archive compressée de code source,
+créer un fichier .gitignore comme ceci :
+
+lame-*.tar.gz
+
+Remonter à la racine du dépôt et afficher l'état du dépôt :
+
+# git status
+
+Ajouter tous les nouveaux fichiers :
+
+# git add *
+
+Voir ce que git en pense :
+
+# git status
+
+Faire le commit :
+
+# git commit -a
+
+Éventuellement, spécifier un message de commit (facultatif).
+
+# git push
+
+Modifier quelques fichiers dans le dépôt local. Par exemple, supprimer le
+fichier lame.info, modifier slack-desc et lame.SlackBuild.
+
+Voir ce que Git en pense :
+
+# git status
+
+Faire le commit :
+
+# git commit -a
+# git push
+
+
+Sur une autre machine, récupérer le dépôt :
+
+# git clone https://github.com/glagaffe/slackware
+
+Examiner le contenu de ce qu'on vient de récupérer.
+
+Sur la première machine, effectuer quelques modifications mineures et faire un
+commit.
+
+Sur la 2ème machine, mettre à jour l'état du dépôt :
+
+# git pull
+
+A partir de là, expérimenter avec les deux machines. Modifier des fichiers sur
+l'une et synchroniser avec l'autre.
+
+Détruire un dépôt
+-----------------
+
+Sur github, cliquer sur le nom du dépôt > Settings > Danger Zone >
+
+  Delete this repository
+
+confirmer en tapant le nom du dépôt
+
+
+
+------------------------------------------------------------------------------
+# vim: syntax=txt
+# vim: set encoding=latin1
