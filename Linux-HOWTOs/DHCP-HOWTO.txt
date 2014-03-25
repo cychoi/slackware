@@ -15,7 +15,7 @@ local Slackware.
 Prérequis
 ---------
 
-Pare-feu : ouvrir le port 67 en UDP.
+Pare-feu : ouvrir les ports 67 et 68 en UDP.
 
 
 Configuration
